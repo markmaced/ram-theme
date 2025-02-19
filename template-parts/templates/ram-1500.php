@@ -125,7 +125,9 @@
             </div>
         </div>
         <div class="w-full flex justify-center mt-5">
-            <button type="button" class="openModal rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-montserrat cursor-pointer">Solicite cotação</button>
+            <button type="button"
+                class="openModal rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-montserrat cursor-pointer">Solicite
+                cotação</button>
         </div>
     </div>
 </section>
@@ -133,7 +135,7 @@
     <?php echo do_shortcode('[swiper_gallery_ram1500]'); ?>
 </section>
 <section class="bg-black pt-24 px-5 md:px-0">
-    <div class="max-w-6xl mx-auto md:flex md:justify-between md:gap-8">
+    <div class="max-w-6xl 2xl:max-w-8xl mx-auto md:flex md:justify-between md:gap-8">
         <div class="md:w-1/2 w-full">
             <h2 class="uppercase text-white md:text-2xl text-xl font-bold font-montserrat md:mb-0 mb-1.5">Poder
                 Inigualável também é estar sempre à frente.</h2>
@@ -146,7 +148,7 @@
                 <div class="flex md:gap-5 items-center w-full md:flex-row flex-col">
                     <input type="email" name="newsletter_email" placeholder="Inscreva-se com o seu e-mail"
                         class="text-white border border-white rounded-xl px-8 py-2 md:w-xs w-full font-montserrat md:mb-0 mb-5">
-                        <button type="button"
+                    <button type="button"
                         class="bg-white newsletter-btn text-black rounded-xl px-4 py-2 cursor-pointer font-montserrat md:m-0 mx-auto">Inscreva-se
                         agora</button>
                 </div>

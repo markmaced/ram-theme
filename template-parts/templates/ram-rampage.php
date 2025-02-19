@@ -134,7 +134,7 @@
     <?php echo do_shortcode('[swiper_gallery_rampage]'); ?>
 </section>
 <section class="bg-black pt-24 px-5 md:px-0">
-    <div class="max-w-6xl mx-auto md:flex md:justify-between md:gap-8">
+    <div class="max-w-6xl 2xl:max-w-8xl mx-auto md:flex md:justify-between md:gap-8">
         <div class="md:w-1/2 w-full">
             <h2 class="uppercase text-white md:text-2xl text-xl font-bold font-montserrat md:mb-0 mb-1.5">Poder
                 Inigualável também é estar sempre à frente.</h2>

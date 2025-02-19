@@ -1647,6 +1647,11 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  .lg\:max-w-7xl {
+    @media (width >= var(--wp--style--global--content-size)) {
+      max-width: var(--container-7xl);
+    }
+  }
   .lg\:text-5xl {
     @media (width >= var(--wp--style--global--content-size)) {
       font-size: var(--text-5xl);

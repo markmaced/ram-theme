@@ -7,7 +7,7 @@
 <?php do_action('tailpress_content_after'); ?>
 
 <footer class="bg-black md:pt-40 pt-10 pb-10 md:px-0 px-5">
-    <div class="max-w-6xl mx-auto md:flex justify-between border-b border-b-gray-400 pb-10">
+    <div class="max-w-6xl 2xl:max-w-8xl mx-auto md:flex justify-between border-b border-b-gray-400 pb-10">
         <div class="md:w-1/2 w-full flex items-start flex-col md:mb-0 mb-5">
             <img src="<?php echo get_theme_image('florenca-logo.png') ?>" class="mb-3">
             <p class="font-rubik font-normal text-sm custom-gray">CNPJ: 77.968.980/0016-21<br>Endereço Matriz: Av. Mal.

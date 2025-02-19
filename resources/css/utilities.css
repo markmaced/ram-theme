@@ -58,3 +58,7 @@
 @utility text-wave{
     color: #eb0071;
 }
+
+@utility max-w-8xl{
+    max-width: 1500px;
+}

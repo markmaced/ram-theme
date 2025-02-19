@@ -26,7 +26,7 @@
     <div class="fixed bottom-5 right-5 z-50">
         <!-- Botão principal -->
         <button id="toggle-buttons" class="red-ram text-white p-0 rounded-full shadow-lg cursor-pointer">
-            <img src="<?php echo get_theme_image(image_name: 'etc.png') ?>" class="w-10">
+            <img src="<?php echo get_theme_image( 'etc.png') ?>" class="w-10">
         </button>
 
         <!-- Botões secundários -->
@@ -37,7 +37,7 @@
             </button>
             <button type="button" id="openModal"
                 class="red-ram text-white p-0 rounded-full shadow-lg flex justify-center py-1.5 cursor-pointer">
-                <img src="<?php echo get_theme_image(image_name: 'envelope.png') ?>" class="w-7">
+                <img src="<?php echo get_theme_image( 'envelope.png') ?>" class="w-7">
             </button>
         </div>
     </div>

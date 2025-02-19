@@ -8,7 +8,7 @@
         <div class="absolute bottom-16 md:w-2/5 flex flex-col items-start md:left-20 left-5">
             <a href="#"
                 class="rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5"
-                style="text-decoration: none !important; font-montserrat">Descubra a RAM 1500<span>
+                style="text-decoration: none !important; font-montserrat">Descubra a RAM 2500<span>
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

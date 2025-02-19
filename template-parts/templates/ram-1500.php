@@ -1,14 +1,14 @@
 <section
-    class="w-full md:min-h-screen custom-min-h bg-cover relative bg-bottom md:bg-center before:w-full before:h-full before:content-[''] before:absolute before:black-opacity-0.5 top-0"
-    style="background-image: url(<?php echo get_theme_image('bg-ram2500.jpg') ?>);">
+    class="w-full md:min-h-screen custom-min-h bg-cover relative bg-bottom md:bg-center before:w-full before:h-full before:content-[''] before:absolute before:black-opacity-0.5 top-0 before:z-0"
+    style="background-image: url(<?php echo get_theme_image('bg-ram1500.jpg') ?>);">
     <div class="md:max-w-6xl w-full mx-auto flex flex-col items-start max-w-full px-5 md:px-0 pt-24">
-        <h1 class="text-white md:text-5xl text-4xl text-left mb-10 font-semibold font-montserrat z-50">RAM 2500: Poder
-            Inigualável <br>para qualquer desafio.
+        <h1 class="text-white md:text-5xl text-4xl text-left mb-10 font-semibold font-montserrat z-50">RAM 1500: Poder
+            Inigualável <br>com sofisticação <br>e performance.
         </h1>
-        <div class="absolute bottom-16 md:w-2/5 flex flex-col items-start md:left-20 left-5">
-            <a href="#"
+        <div class="md:w-2/5 flex flex-col items-start md:mt-40 mt-10 z-50">
+            <a href="#1500"
                 class="rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5"
-                style="text-decoration: none !important; font-montserrat">Descubra a RAM 2500<span>
+                style="text-decoration: none !important; font-montserrat">Descubra a RAM 1500<span>
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -16,8 +16,8 @@
                     </svg>
                 </span>
             </a>
-            <h2 class="text-sm custom-gray font-extralight font-rubik">A picape feita para quem precisa de força sem
-                limites. Capacidade, resistência e tecnologia para encarar qualquer terreno com confiança.</h2>
+            <h2 class="text-sm text-white font-extralight font-rubik">A potência que desafia os limites. O conforto que
+                transforma cada trajeto. Tudo o que você espera de uma RAM, elevado a um novo patamar.</h2>
         </div>
     </div>
 </section>
@@ -40,13 +40,12 @@
                 </div>
             </div>
         </div>
-
         <!-- Card 2 -->
         <div class="ram-card md:w-1/4 w-1/2 md:h-[520px] h-[360px] cursor-pointer relative group overflow-hidden"
-            data-model="ram1500">
+            data-model="1500">
             <div class="w-full h-full bg-cover bg-center"
                 style="background-image: url(<?php echo get_theme_image('card-1500.jpg') ?>)">
-                <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
+                <div class="absolute inset-0 bg-black opacity-0 transition-opacity duration-500">
                 </div>
                 <div class="absolute inset-0 md:px-10 px-5 flex flex-col justify-end text-white transition-opacity">
                     <h2 class="md:text-4xl text-2xl font-medium mb-8 text-center font-montserrat">RAM 1500</h2>
@@ -62,10 +61,10 @@
 
         <!-- Card 3 -->
         <div class="ram-card md:w-1/4 w-1/2 md:h-[520px] h-[360px] cursor-pointer relative group overflow-hidden"
-            data-model="ram2500">
+            data-model="2500">
             <div class="w-full h-full bg-cover bg-center"
                 style="background-image: url(<?php echo get_theme_image('card-2500.jpg') ?>)">
-                <div class="absolute inset-0 bg-black opacity-0 transition-opacity duration-500">
+                <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                 </div>
                 <div class="absolute inset-0 md:px-10 px-5 flex flex-col justify-end text-white transition-opacity">
                     <h2 class="md:text-4xl text-2xl font-medium mb-8 text-center font-montserrat">RAM 2500</h2>
@@ -81,7 +80,7 @@
 
         <!-- Card 4 -->
         <div class="ram-card md:w-1/4 w-1/2 md:h-[520px] h-[360px] cursor-pointer relative group overflow-hidden"
-            data-model="ram3500">
+            data-model="3500">
             <div class="w-full h-full bg-cover bg-center"
                 style="background-image: url(<?php echo get_theme_image('card-3500.jpg') ?>)">
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
@@ -100,43 +99,47 @@
     </div>
 
 </section>
-<section class="bg-white pb-11 pt-16 md:px-0 px-5">
+<section class="bg-white pb-11 pt-16 md:px-0 px-5" id="1500">
     <div class="max-w-6xl mx-auto w-full">
         <h3 class="uppercase font-medium text-2xl mb-10 font-montserrat text-center">Ficha Técnica</h3>
         <div class="w-full flex md:gap-5 md:flex-nowrap flex-wrap">
             <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
                 <p class="text-base font-bold font-montserrat text-center">Motor</p>
-                <p class="text-sm font-medium font-rubik text-center">6.7L Cummins Turbo Diesel, 6 cilindros em linha</p>
+                <p class="text-sm text-center font-medium font-rubik">3.0L Hurricane 6 Biturbo</p>
             </div>
             <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
                 <p class="text-base font-bold font-montserrat text-center">Transmissão</p>
-                <p class="text-sm font-medium font-rubik text-center">Automática de 6 marchas</p>
+                <p class="text-sm text-center font-medium font-rubik">Automática de 8 marchas</p>
             </div>
             <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
                 <p class="text-base font-bold font-montserrat text-center">Cilindradas</p>
-                <p class="text-sm font-medium font-rubik text-center">6.690 cm³</p>
+                <p class="text-sm text-center font-medium font-rubik">2.998 cm³</p>
             </div>
             <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
                 <p class="text-base font-bold font-montserrat text-center">Capacidade caçamba</p>
-                <p class="text-sm font-medium font-rubik text-center">1.628 litros</p>
+                <p class="text-sm text-center font-medium font-rubik">1.200 litros</p>
             </div>
             <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
                 <p class="text-base font-bold font-montserrat text-center">Capacidade de passageiros</p>
-                <p class="text-sm font-medium font-rubik text-center">5 lugares</p>
+                <p class="text-sm text-center font-medium font-rubik">5 lugares</p>
             </div>
+        </div>
+        <div class="w-full flex justify-center mt-5">
+            <button type="button" class="openModal rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-montserrat cursor-pointer">Solicite cotação</button>
         </div>
     </div>
 </section>
 <section class="w-full bg-black">
-    <?php echo do_shortcode('[swiper_gallery_ram2500]'); ?>
+    <?php echo do_shortcode('[swiper_gallery_ram1500]'); ?>
 </section>
 <section class="bg-black pt-24 px-5 md:px-0">
     <div class="max-w-6xl mx-auto md:flex md:justify-between md:gap-8">
         <div class="md:w-1/2 w-full">
             <h2 class="uppercase text-white md:text-2xl text-xl font-bold font-montserrat md:mb-0 mb-1.5">Poder
                 Inigualável também é estar sempre à frente.</h2>
-            <p class="text-sm font-normal text-white font-rubik md:mb-0 mb-5">Quer ficar por dentro de lançamentos,
-                novidades e condições especiais da RAM 2500? Cadastre-se e receba tudo em primeira mão.</p>
+            <p class="text-sm font-normal text-white font-rubik md:mb-0 mb-5">Receba novidades, ofertas exclusivas e
+                lançamentos direto no seu e-mail. Descubra o que faz da RAM 1500 uma referência em potência e
+                sofisticação.</p>
         </div>
         <div class="md:w-1/2 w-full flex items-center">
             <form method="post" class="w-full">

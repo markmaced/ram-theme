@@ -72,6 +72,7 @@ jQuery(document).ready(function ($) {
   $("#toggle-buttons").on("click", function () {
     $("#floating-buttons").toggleClass("hidden");
     $(this).toggleClass('btn-active');
+    $('#quoteBubble').addClass('hidden');
   });
   $(document).on("click", ".ram-card", function () {
     var model = $(this).data("model");
@@ -120,7 +121,7 @@ jQuery(document).ready(function ($) {
       }
     });
   });
-  $("#openModal").click(function () {
+  $(document).on('click', '.openModal', function () {
     $("#customModal").fadeIn(300).css("display", "flex");
   });
   $("#closeModal, #customModal").click(function (e) {
@@ -131,7 +132,7 @@ jQuery(document).ready(function ($) {
   function getParameterByName() {
     var urlParams = new URLSearchParams(window.location.search);
     var model = urlParams.get('model') || "rampage";
-    var validModels = ["rampage", "ram1500", "ram2500", "ram3500"];
+    var validModels = ["rampage", "1500", "2500", "3500"];
     if (!validModels.includes(model)) {
       model = "rampage";
     }
@@ -238,6 +239,12 @@ jQuery(document).ready(function ($) {
       }
     });
   });
+  setTimeout(function () {
+    $('#quoteBubble').removeClass('-right-60');
+    $('#quoteBubble').removeClass('opacity-0');
+    $('#quoteBubble').addClass('right-12');
+    $('#quoteBubble').addClass('opacity-100');
+  }, 3000);
 });
 
 /***/ })

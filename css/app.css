@@ -548,17 +548,32 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
   .top-2 {
     top: calc(var(--spacing) * 2);
   }
   .top-3 {
     top: calc(var(--spacing) * 3);
   }
+  .-right-60 {
+    right: calc(var(--spacing) * -60);
+  }
   .right-2 {
     right: calc(var(--spacing) * 2);
   }
   .right-5 {
     right: calc(var(--spacing) * 5);
+  }
+  .right-12 {
+    right: calc(var(--spacing) * 12);
+  }
+  .right-60 {
+    right: calc(var(--spacing) * 60);
+  }
+  .right-240 {
+    right: calc(var(--spacing) * 240);
   }
   .bottom-5 {
     bottom: calc(var(--spacing) * 5);
@@ -631,8 +646,38 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-14 {
+    margin-top: calc(var(--spacing) * 14);
+  }
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-36 {
+    margin-top: calc(var(--spacing) * 36);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
+  .mt-44 {
+    margin-top: calc(var(--spacing) * 44);
+  }
+  .mt-48 {
+    margin-top: calc(var(--spacing) * 48);
+  }
+  .mt-52 {
+    margin-top: calc(var(--spacing) * 52);
+  }
+  .mt-80 {
+    margin-top: calc(var(--spacing) * 80);
   }
   .alignnone {
     height: auto;
@@ -708,6 +753,9 @@
   }
   .w-16 {
     width: calc(var(--spacing) * 16);
+  }
+  .w-36 {
+    width: calc(var(--spacing) * 36);
   }
   .w-48 {
     width: calc(var(--spacing) * 48);
@@ -848,6 +896,9 @@
   .bg-primary {
     background-color: var(--color-primary);
   }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
   .bg-transparent {
     background-color: transparent;
   }
@@ -881,6 +932,9 @@
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
@@ -1044,6 +1098,9 @@
   }
   .opacity-60 {
     opacity: 60%;
+  }
+  .opacity-100 {
+    opacity: 100%;
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -1224,6 +1281,16 @@
   .md\:my-6 {
     @media (width >= 782px) {
       margin-block: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:mt-40 {
+    @media (width >= 782px) {
+      margin-top: calc(var(--spacing) * 40);
+    }
+  }
+  .md\:mt-52 {
+    @media (width >= 782px) {
+      margin-top: calc(var(--spacing) * 52);
     }
   }
   .md\:mb-0 {

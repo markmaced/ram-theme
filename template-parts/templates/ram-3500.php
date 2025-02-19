@@ -5,8 +5,8 @@
         <h1 class="text-white md:text-5xl text-4xl text-left mb-10 font-semibold font-montserrat z-50">RAM 3500: Poder
             Inigualável para <br>os desafios mais exigentes.
         </h1>
-        <div class="absolute bottom-16 md:w-2/5 flex flex-col items-start md:left-20 left-5">
-            <a href="#"
+        <div class="md:w-2/5 flex flex-col items-start md:mt-52 mt-16 z-50">
+            <a href="#3500"
                 class="rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5"
                 style="text-decoration: none !important; font-montserrat">Conheça a RAM 3500 <span>
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@
 
         <!-- Card 2 -->
         <div class="ram-card md:w-1/4 w-1/2 md:h-[520px] h-[360px] cursor-pointer relative group overflow-hidden"
-            data-model="ram1500">
+            data-model="1500">
             <div class="w-full h-full bg-cover bg-center"
                 style="background-image: url(<?php echo get_theme_image('card-1500.jpg') ?>)">
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
@@ -62,7 +62,7 @@
 
         <!-- Card 3 -->
         <div class="ram-card md:w-1/4 w-1/2 md:h-[520px] h-[360px] cursor-pointer relative group overflow-hidden"
-            data-model="ram2500">
+            data-model="2500">
             <div class="w-full h-full bg-cover bg-center"
                 style="background-image: url(<?php echo get_theme_image('card-2500.jpg') ?>)">
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
@@ -81,7 +81,7 @@
 
         <!-- Card 4 -->
         <div class="ram-card md:w-1/4 w-1/2 md:h-[520px] h-[360px] cursor-pointer relative group overflow-hidden"
-            data-model="ram3500">
+            data-model="3500">
             <div class="w-full h-full bg-cover bg-center"
                 style="background-image: url(<?php echo get_theme_image('card-3500.jpg') ?>)">
                 <div class="absolute inset-0 bg-black opacity-0 transition-opacity duration-500">
@@ -99,7 +99,7 @@
         </div>
     </div>
 </section>
-<section class="bg-white pb-11 pt-16 md:px-0 px-5">
+<section class="bg-white pb-11 pt-16 md:px-0 px-5" id="3500">
     <div class="max-w-6xl mx-auto w-full">
         <h3 class="uppercase font-medium text-2xl mb-10 font-montserrat text-center">Ficha Técnica</h3>
         <div class="w-full flex md:gap-5 md:flex-nowrap flex-wrap">
@@ -123,6 +123,9 @@
                 <p class="text-base font-bold font-montserrat text-center">Capacidade de passageiros</p>
                 <p class="text-sm font-medium font-rubik text-center">5 lugares</p>
             </div>
+        </div>
+        <div class="w-full flex justify-center mt-5">
+            <button type="button" class="openModal rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-montserrat cursor-pointer">Solicite cotação</button>
         </div>
     </div>
 </section>

@@ -26,8 +26,11 @@
     <div class="fixed bottom-5 right-5 z-50">
         <!-- Botão principal -->
         <button id="toggle-buttons" class="red-ram text-white p-0 rounded-full shadow-lg cursor-pointer">
-            <img src="<?php echo get_theme_image( 'etc.png') ?>" class="w-10">
+            <img src="<?php echo get_theme_image('etc.png') ?>" class="w-10">
         </button>
+        <div id="quoteBubble" class="-right-60 opacity-0 top-1 w-36 text-center absolute p-2 red-ram text-white rounded-full shadow-lg text-xs font-montserrat px-5 transition-all duration-500">
+            Solicite cotação
+        </div>
 
         <!-- Botões secundários -->
         <div id="floating-buttons" class="hidden flex flex-col gap-2 mt-2">
@@ -35,9 +38,9 @@
                 class="red-ram text-white p-0 rounded-full shadow-lg justify-center py-1.5 pl-0.5 cursor-pointer hidden">
                 <img src="<?php echo get_theme_image('whatsapp.png') ?>" class="w-7">
             </button>
-            <button type="button" id="openModal"
-                class="red-ram text-white p-0 rounded-full shadow-lg flex justify-center py-1.5 cursor-pointer">
-                <img src="<?php echo get_theme_image( 'envelope.png') ?>" class="w-7">
+            <button type="button"
+                class="red-ram text-white p-0 rounded-full shadow-lg flex justify-center py-1.5 cursor-pointer openModal">
+                <img src="<?php echo get_theme_image('envelope.png') ?>" class="w-7">
             </button>
         </div>
     </div>
@@ -83,9 +86,9 @@
                         class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer">
                         <option class="text-black" value="" disabled selected hidden>Selecione um modelo</option>
                         <option class="text-black" value="rampage">Rampage</option>
-                        <option class="text-black" value="ram1500">Ram 1500</option>
-                        <option class="text-black" value="ram2500">Ram 2500</option>
-                        <option class="text-black" value="ram3500">Ram 3500</option>
+                        <option class="text-black" value="1500">1500</option>
+                        <option class="text-black" value="2500">2500</option>
+                        <option class="text-black" value="3500">3500</option>
                     </select>
                     <label for="floating_model"
                         class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Modelo</label>

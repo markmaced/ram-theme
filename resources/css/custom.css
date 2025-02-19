@@ -41,6 +41,15 @@ article > *:not(.entry-content),
     }
 }
 
+.custom-swal {
+  background: linear-gradient(to right , black , #1f2937) !important;
+  color: #fff !important;
+}
+.swal2-loader{
+  border-top-color: #4D231E !important;
+  border-bottom-color: #4D231E !important
+}
+
 a{
     text-decoration: none !important;
 }

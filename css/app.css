@@ -1362,6 +1362,11 @@
       padding-top: calc(var(--spacing) * 40);
     }
   }
+  .md\:text-left {
+    @media (width >= 782px) {
+      text-align: left;
+    }
+  }
   .md\:text-2xl {
     @media (width >= 782px) {
       font-size: var(--text-2xl);
@@ -1389,11 +1394,6 @@
   .\32 xl\:max-w-8xl {
     @media (width >= 1440px) {
       max-width: 1500px;
-    }
-  }
-  .lg\:max-w-7xl {
-    @media (width >= var(--wp--style--global--content-size)) {
-      max-width: var(--container-7xl);
     }
   }
   .lg\:text-5xl {
@@ -1512,6 +1512,14 @@
         list-style-type: decimal;
       }
     }
+  }
+  .custom-swal {
+    background: linear-gradient(to right , black , #1f2937) !important;
+    color: #fff !important;
+  }
+  .swal2-loader {
+    border-top-color: #4D231E !important;
+    border-bottom-color: #4D231E !important;
   }
   a {
     text-decoration: none !important;

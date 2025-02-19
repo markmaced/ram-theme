@@ -100,7 +100,7 @@
     </div>
 
 </section>
-<section class="bg-white pb-11 pt-16 md:px-0 px-5">
+<section class="bg-white pb-11 pt-16 md:px-0 px-5" id="2500">
     <div class="max-w-6xl mx-auto w-full">
         <h3 class="uppercase font-medium text-2xl mb-10 font-montserrat text-center">Ficha Técnica</h3>
         <div class="w-full flex md:gap-5 md:flex-nowrap flex-wrap">

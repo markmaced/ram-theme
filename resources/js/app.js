@@ -39,38 +39,42 @@ jQuery(document).ready(function ($) {
 
     $(document).on("click", ".ram-card", function () {
         let model = $(this).data("model");
-    
+
         // Exibe o loading
         Swal.fire({
             title: "Carregando...",
             text: "Aguarde enquanto carregamos o modelo.",
             allowOutsideClick: false,
             showConfirmButton: false,
+            customClass: {
+                popup: 'custom-swal',
+                confirmButton: 'custom-button'
+            },
             didOpen: () => {
                 Swal.showLoading();
             }
         });
-    
+
         // Atualiza a URL sem recarregar a página
         let newUrl = window.location.origin + window.location.pathname + "?model=" + model;
         window.history.pushState({ path: newUrl }, "", newUrl);
-    
+
         // Faz a requisição AJAX para carregar o modelo
         $.ajax({
             url: newUrl,
             method: "GET",
             success: function (response) {
                 $("#ram-content").html($(response).find("#ram-content").html());
-                
+
                 setTimeout(() => {
                     $(".swiper").each(function () {
                         this.swiper?.destroy(true, true);
                     });
                     initSwipers();
                 }, 100);
-    
+
                 getParameterByName();
-    
+
                 // Fecha o loading
                 Swal.close();
             },
@@ -82,9 +86,9 @@ jQuery(document).ready(function ($) {
                 });
             }
         });
-    });    
+    });
 
-    $(document).on('click' , '.openModal' ,function () {
+    $(document).on('click', '.openModal', function () {
         $("#customModal").fadeIn(300).css("display", "flex");
     });
 
@@ -97,13 +101,13 @@ jQuery(document).ready(function ($) {
     function getParameterByName() {
         const urlParams = new URLSearchParams(window.location.search);
         let model = urlParams.get('model') || "rampage";
-    
+
         let validModels = ["rampage", "1500", "2500", "3500"];
-    
+
         if (!validModels.includes(model)) {
             model = "rampage";
         }
-    
+
         $("#floating_model").val(model);
     }
 
@@ -188,10 +192,54 @@ jQuery(document).ready(function ($) {
             }
         });
     });
-    setTimeout(function() {
+    setTimeout(function () {
         $('#quoteBubble').removeClass('-right-60')
         $('#quoteBubble').removeClass('opacity-0')
         $('#quoteBubble').addClass('right-12')
         $('#quoteBubble').addClass('opacity-100')
     }, 3000);
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        var target = $($.attr(this, 'href'));
+
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 800); // Tempo da animação em milissegundos
+        }
+    });
+    var $toggleButton = $('#toggle-buttons');
+    var $quoteBubble = $('#quoteBubble');
+    var $window = $(window);
+
+    function checkScroll() {
+        var scrollTop = $window.scrollTop();
+        var windowHeight = $window.height();
+        var documentHeight = $(document).height();
+
+        // Verifica se chegou ao final da página
+        if (scrollTop + windowHeight >= documentHeight - 10) {
+            // Se o bubble estiver visível, oculta-o junto com o botão
+            if ($quoteBubble.is(':visible')) {
+                $quoteBubble.fadeOut(500);
+            }
+            $toggleButton.fadeOut(500);
+        } else {
+            // Se o botão e o bubble estiverem visíveis, deve apenas aparecer se o bubble estiver visível
+            if ($quoteBubble.is(':visible')) {
+                $quoteBubble.fadeIn(500);
+            }
+            $toggleButton.fadeIn(500);
+        }
+    }
+
+    // Verifica o scroll ao rolar a página
+    $window.on('scroll', checkScroll);
+
+    // Oculta o bubble se o botão for clicado
+    $toggleButton.on('click', function () {
+        $quoteBubble.fadeOut(500);
+    });
 });

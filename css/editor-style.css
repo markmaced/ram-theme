@@ -1623,6 +1623,11 @@
       padding-top: calc(var(--spacing) * 40);
     }
   }
+  .md\:text-left {
+    @media (width >= 782px) {
+      text-align: left;
+    }
+  }
   .md\:text-2xl {
     @media (width >= 782px) {
       font-size: var(--text-2xl);

@@ -8,7 +8,7 @@
 
 <footer class="bg-black md:pt-40 pt-10 pb-10 md:px-0 px-5">
     <div class="max-w-6xl 2xl:max-w-8xl mx-auto md:flex justify-between border-b border-b-gray-400 pb-10">
-        <div class="md:w-1/2 w-full flex items-start flex-col md:mb-0 mb-5">
+        <div class="md:w-1/2 w-full flex items-start flex-col md:mb-0 mb-10">
             <img src="<?php echo get_theme_image('florenca-logo.png') ?>" class="mb-3">
             <p class="font-rubik font-normal text-sm custom-gray">CNPJ: 77.968.980/0016-21<br>Endereço Matriz: Av. Mal.
                 Floriano Peixoto, 3501<br>Parolin, Curitiba - PR</p>
@@ -17,8 +17,8 @@
             <img src="<?php echo get_theme_image('ram-footer.png') ?>" class="md:w-3xs w-48 object-contain">
         </div>
     </div>
-    <div class="w-full flex justify-between max-w-6xl mx-auto items-center pt-8">
-        <p class="font-rubik text-white font-normal text-base">© Copyright 2025 Grupo Florença - Todos os direitos
+    <div class="w-full flex justify-between max-w-6xl mx-auto items-center pt-8 md:flex-row flex-col">
+        <p class="font-rubik text-white font-normal text-base md:text-left text-center md:mb-0 mb-5">© Copyright 2025 Grupo Florença - Todos os direitos
             reservados</p>
         <p class="text-white text-sm font-normal font-montserrat">Criado por <a href="https://www.wave.pro.br"
                 class="hover:text-wave transition-all duration-300" target="_blank">wave</a></p>

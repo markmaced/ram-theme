@@ -83,6 +83,10 @@ jQuery(document).ready(function ($) {
       text: "Aguarde enquanto carregamos o modelo.",
       allowOutsideClick: false,
       showConfirmButton: false,
+      customClass: {
+        popup: 'custom-swal',
+        confirmButton: 'custom-button'
+      },
       didOpen: function didOpen() {
         Swal.showLoading();
       }
@@ -245,6 +249,46 @@ jQuery(document).ready(function ($) {
     $('#quoteBubble').addClass('right-12');
     $('#quoteBubble').addClass('opacity-100');
   }, 3000);
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    var target = $($.attr(this, 'href'));
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 800); // Tempo da animação em milissegundos
+    }
+  });
+  var $toggleButton = $('#toggle-buttons');
+  var $quoteBubble = $('#quoteBubble');
+  var $window = $(window);
+  function checkScroll() {
+    var scrollTop = $window.scrollTop();
+    var windowHeight = $window.height();
+    var documentHeight = $(document).height();
+
+    // Verifica se chegou ao final da página
+    if (scrollTop + windowHeight >= documentHeight - 10) {
+      // Se o bubble estiver visível, oculta-o junto com o botão
+      if ($quoteBubble.is(':visible')) {
+        $quoteBubble.fadeOut(500);
+      }
+      $toggleButton.fadeOut(500);
+    } else {
+      // Se o botão e o bubble estiverem visíveis, deve apenas aparecer se o bubble estiver visível
+      if ($quoteBubble.is(':visible')) {
+        $quoteBubble.fadeIn(500);
+      }
+      $toggleButton.fadeIn(500);
+    }
+  }
+
+  // Verifica o scroll ao rolar a página
+  $window.on('scroll', checkScroll);
+
+  // Oculta o bubble se o botão for clicado
+  $toggleButton.on('click', function () {
+    $quoteBubble.fadeOut(500);
+  });
 });
 
 /***/ })

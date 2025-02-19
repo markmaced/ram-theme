@@ -121,7 +121,7 @@
                 <p class="text-base font-bold font-montserrat text-center">Capacidade caçamba</p>
                 <p class="text-sm font-medium font-rubik text-center">1.628 litros</p>
             </div>
-            <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
+            <div class="md:w-1/5 w-full mb-5 md:mb-0">
                 <p class="text-base font-bold font-montserrat text-center">Capacidade de passageiros</p>
                 <p class="text-sm font-medium font-rubik text-center">5 lugares</p>
             </div>

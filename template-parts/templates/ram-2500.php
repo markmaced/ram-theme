@@ -1,7 +1,7 @@
 <section
     class="w-full md:min-h-screen custom-min-h bg-cover relative bg-bottom md:bg-center before:w-full before:h-full before:content-[''] before:absolute before:black-opacity-0.5 top-0"
     style="background-image: url(<?php echo get_theme_image('bg-ram2500.jpg') ?>);">
-    <div class="md:max-w-6xl w-full mx-auto flex flex-col items-start max-w-full px-5 md:px-0 pt-24">
+    <div class="md:max-w-6xl 2xl:max-w-8xl w-full mx-auto flex flex-col items-start max-w-full px-5 md:px-0 pt-24">
         <h1 class="text-white md:text-5xl text-4xl text-left mb-10 font-semibold font-montserrat z-50">RAM 2500: Poder
             Inigualável <br>para qualquer desafio.
         </h1>

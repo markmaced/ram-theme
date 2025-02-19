@@ -1,0 +1,60 @@
+@utility container {
+    max-width: var(--wp--style--global--wide-size);
+}
+
+@utility alignfull {
+    width: 100vw;
+    margin: 0 calc(50% - 50vw) !important;
+}
+
+@utility alignwide {
+    width: calc(200px + var(--wp--style--global--wide-size));
+
+    img {
+        width: 100%;
+
+        margin: 0 -100px 0 -100px !important;
+    }
+}
+
+@utility alignnone {
+    height: auto;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@utility aligncenter {
+    margin: 0.5rem auto !important;
+}
+
+@utility customgradient{
+    background: linear-gradient(92.11deg, #8D3B3E -8.47%, #49211C 98.22%);
+}
+@utility font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@utility font-rubik {
+    font-family: 'Rubik', sans-serif;
+}
+
+@utility custom-gray{
+    color: #BCBCBC;
+}
+
+@utility custom-min-h{
+    min-height: 500px;
+}
+
+@utility black-opacity-0.5{
+    background: rgba(0,0,0,0.5);
+}
+
+@utility red-ram{
+    background: #4D231E;
+}
+
+@utility text-wave{
+    color: #eb0071;
+}

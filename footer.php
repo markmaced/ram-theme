@@ -17,7 +17,7 @@
             <img src="<?php echo get_theme_image('ram-footer.png') ?>" class="md:w-3xs w-48 object-contain">
         </div>
     </div>
-    <div class="w-full flex justify-between max-w-6xl mx-auto items-center pt-8 md:flex-row flex-col">
+    <div class="w-full flex justify-between max-w-6xl 2xl:max-w-8xl mx-auto items-center pt-8 md:flex-row flex-col">
         <p class="font-rubik text-white font-normal text-base md:text-left text-center md:mb-0 mb-5">© Copyright 2025 Grupo Florença - Todos os direitos
             reservados</p>
         <p class="text-white text-sm font-normal font-montserrat">Criado por <a href="https://www.wave.pro.br"

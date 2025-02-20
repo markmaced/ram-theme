@@ -68,7 +68,9 @@
                 </div>
                 <div class="absolute inset-0 md:px-10 px-5 flex flex-col justify-end text-white transition-opacity">
                     <h2 class="md:text-4xl text-2xl font-medium mb-8 text-center font-montserrat">RAM 2500</h2>
-                    <p class="text-sm text-center font-rubik">Força bruta para quem precisa <br>ir além.</p>
+                    <p class="text-sm text-center font-rubik 2xl:hidden">Força bruta para quem precisa <br>ir além.</p>
+                    <p class="text-sm text-center font-rubik hidden 2xl:block md:hidden">Força bruta para quem precisa
+                        ir além.</p>
                     <div class="mt-20 flex justify-end pb-5">
                         <button class="rounded-full cursor-pointer">
                             <img src="<?php echo get_theme_image('arrow-right.png') ?>" class="w-10">
@@ -145,7 +147,7 @@
         </div>
         <div class="md:w-1/2 w-full flex items-center">
             <form method="post" class="w-full">
-                <div class="flex md:gap-5 items-center w-full md:flex-row flex-col">
+                <div class="flex md:gap-5 items-center w-full md:flex-row flex-col justify-end">
                     <input type="email" name="newsletter_email" placeholder="Inscreva-se com o seu e-mail"
                         class="text-white border border-white rounded-xl px-8 py-2 md:w-xs w-full font-montserrat md:mb-0 mb-5">
                     <button type="button"

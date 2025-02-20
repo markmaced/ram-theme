@@ -42,7 +42,8 @@ article > *:not(.entry-content),
 }
 
 .custom-swal {
-  background: linear-gradient(to right , black , #1f2937) !important;
+  /* background: linear-gradient(to right , black , #1f2937) !important; */
+  background-color: #000 !important;
   color: #fff !important;
 }
 .swal2-loader{

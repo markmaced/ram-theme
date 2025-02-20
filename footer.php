@@ -47,7 +47,8 @@
 
     <div id="customModal"
         class="fixed inset-0 flex items-center justify-center h-screen w-full z-50 black-opacity-0.5 hidden md:px-0 px-5">
-        <div class="bg-gradient-to-r from-black to-gray-800 p-6 rounded-lg shadow-lg w-lg relative">
+        <!-- <div class="bg-gradient-to-r from-black to-gray-800 p-6 rounded-lg shadow-lg w-lg relative"> -->
+        <div class="bg-black p-6 rounded-lg shadow-lg w-lg relative">
             <button id="closeModal" class="absolute top-2 right-2 text-white hover:text-white">&times;</button>
             <h2 class="text-2xl font-semibold font-montserrat text-white mb-5">Eu quero ser exclusivo.</h2>
             <p class="text-sm font-rubik text-white"></p>

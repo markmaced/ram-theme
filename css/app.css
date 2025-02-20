@@ -1262,6 +1262,11 @@
       display: flex;
     }
   }
+  .md\:hidden {
+    @media (width >= 782px) {
+      display: none;
+    }
+  }
   .md\:h-\[520px\] {
     @media (width >= 782px) {
       height: 520px;
@@ -1391,9 +1396,24 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  .\32 xl\:block {
+    @media (width >= 1440px) {
+      display: block;
+    }
+  }
+  .\32 xl\:hidden {
+    @media (width >= 1440px) {
+      display: none;
+    }
+  }
   .\32 xl\:max-w-8xl {
     @media (width >= 1440px) {
       max-width: 1500px;
+    }
+  }
+  .\32 xl\:px-2 {
+    @media (width >= 1440px) {
+      padding-inline: calc(var(--spacing) * 2);
     }
   }
   .lg\:text-5xl {
@@ -1514,7 +1534,7 @@
     }
   }
   .custom-swal {
-    background: linear-gradient(to right , black , #1f2937) !important;
+    background-color: #000 !important;
     color: #fff !important;
   }
   .swal2-loader {

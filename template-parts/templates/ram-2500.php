@@ -23,7 +23,7 @@
 </section>
 <section class="bg-white pb-11 pt-16 md:px-0 px-5" id="2500">
     <div class="max-w-6xl mx-auto w-full">
-    <h3 class="uppercase font-medium text-2xl mb-10 font-neue md:text-left text-center">Ficha Técnica <span class="font-bold">2500</span></h3>
+    <h3 class="uppercase font-medium text-2xl mb-10 font-neue md:text-left text-center">Ficha Técnica <span class="font-bold font-neue">2500</span></h3>
         <div class="w-full flex md:gap-5 md:flex-nowrap flex-wrap">
             <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
                 <p class="text-base font-bold font-neue md:text-left text-center">Motor</p>

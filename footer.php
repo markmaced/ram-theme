@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <button type="button" id="registerLead"
-                    class="text-black bg-white focus:ring-4 focus:outline-none w-full font-medium rounded-lg text-base md:w-28 cursor-pointer px-5 py-2.5 text-center dark:red-ram dark:hover:bg-white dark:focus:ring-blue-800 duration-500 transition-all hover:red-ram hover:text-white">Enviar</button>
+                    class="text-black bg-white focus:ring-4 focus:outline-none w-full font-medium rounded-lg text-base md:w-28 cursor-pointer px-5 py-2.5 text-center dark:red-ram dark:hover:bg-white dark:focus:ring-blue-800">Enviar</button>
             </form>
         </div>
     </div>

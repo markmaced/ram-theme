@@ -55,7 +55,7 @@
             <h2 class="text-2xl font-semibold font-montserrat text-white mb-5">Eu quero ser exclusivo.</h2>
             <p class="text-sm font-rubik text-white"></p>
             <form class="max-w-md mx-auto">
-                <div class="bg-white-50">
+                <div class="bg-white-50 pt-5">
                     <div class="relative z-0 w-full mb-5 group">
                         <input type="text" name="floating_name" id="floating_name"
                             class="block py-2.5 w-full text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-ram focus:outline-none focus:ring-0 focus:border-red-ram peer px-5"

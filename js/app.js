@@ -292,17 +292,19 @@ jQuery(document).ready(function ($) {
   var $cards = $(".ram-card");
   var $defaultActive = $cards.first(); // Define o primeiro card como ativo por padrão
 
+  // Adiciona a estrutura do degradê a todos os cards, mas deixa invisível
+  $cards.addClass("relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:from-black/50 before:via-black/10 before:to-transparent before:opacity-0");
   function setActiveCard($card) {
-    $cards.find(".bg-black").css("opacity", "0.6"); // Escurece todos
-    $card.find(".bg-black").css("opacity", "0"); // Deixa o card ativo aceso
+    $cards.removeClass("before:opacity-100").addClass("before:opacity-0"); // Esconde o degradê dos outros
+    $card.addClass("before:opacity-100"); // Mostra no ativo
   }
 
   // Define o primeiro card como ativo inicialmente
   setActiveCard($defaultActive);
   $cards.hover(function () {
-    setActiveCard($(this)); // Muda o card ativo ao passar o mouse
+    setActiveCard($(this));
   }, function () {
-    setActiveCard($defaultActive); // Restaura o card ativo inicial quando o mouse sai
+    setActiveCard($defaultActive);
   });
 });
 

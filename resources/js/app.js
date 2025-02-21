@@ -242,4 +242,24 @@ jQuery(document).ready(function ($) {
     $toggleButton.on('click', function () {
         $quoteBubble.fadeOut(500);
     });
+
+    let $cards = $(".ram-card");
+    let $defaultActive = $cards.first(); // Define o primeiro card como ativo por padrão
+
+    function setActiveCard($card) {
+        $cards.find(".bg-black").css("opacity", "0.6"); // Escurece todos
+        $card.find(".bg-black").css("opacity", "0"); // Deixa o card ativo aceso
+    }
+
+    // Define o primeiro card como ativo inicialmente
+    setActiveCard($defaultActive);
+
+    $cards.hover(
+        function () {
+            setActiveCard($(this)); // Muda o card ativo ao passar o mouse
+        },
+        function () {
+            setActiveCard($defaultActive); // Restaura o card ativo inicial quando o mouse sai
+        }
+    );
 });

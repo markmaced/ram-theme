@@ -1,24 +1,58 @@
 <section
-    class="w-full md:min-h-screen custom-min-h bg-cover relative bg-bottom md:bg-center before:w-full before:h-full before:content-[''] before:absolute before:black-opacity-0.5 top-0"
+    class="w-full md:min-h-screen custom-min-h bg-cover relative bg-bottom md:bg-center before:w-full before:h-full before:content-[''] before:absolute before:black-opacity-0.5 top-0 flex items-center"
     style="background-image: url(<?php echo get_theme_image('bg-ram3500.jpg') ?>);">
-    <div class="md:max-w-6xl 2xl:max-w-8xl w-full mx-auto flex flex-col items-start max-w-full px-5 md:px-0 pt-24">
-        <h1 class="text-white md:text-5xl text-4xl text-left mb-10 font-semibold font-montserrat z-50">RAM 3500: Poder
+    <div class="md:max-w-6xl 2xl:max-w-8xl w-full mx-auto flex flex-col items-start max-w-full px-5 md:px-0">
+        <h1 class="text-white md:text-5xl text-4xl text-left mb-5 font-semibold font-montserrat z-50">RAM 3500: Poder
             Inigualável para <br>os desafios mais exigentes.
         </h1>
-        <div class="md:w-2/5 flex flex-col items-start md:mt-52 mt-16 z-50">
-            <a href="#3500"
-                class="rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5"
-                style="text-decoration: none !important; font-montserrat">Conheça a RAM 3500 <span>
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
-                    </svg>
-                </span>
-            </a>
-            <h2 class="text-sm custom-gray font-extralight font-rubik">Se a sua jornada exige força máxima,
-                capacidade<br>
-                extrema e tecnologia de ponta, a RAM 3500<br> está pronta para entregar.</h2>
+        <h2 class="text-sm text-white font-extralight font-rubik z-50">Se a sua jornada exige força máxima,
+            capacidade<br>
+            extrema e tecnologia de ponta, a RAM 3500<br> está pronta para entregar.</h2>
+    </div>
+</section>
+<section class="w-full bg-black py-20 px-5 md:px-0">
+    <div class="max-w-6xl 2xl:max-w-8xl mx-auto flex flex-col md:flex-row md:gap-10 gap-5 items-center">
+        <div class="md:w-2/3 w-full">
+            <h2 class="text-white text-3xl font-montserrat text-center md:text-left">A força da RAM está a um clique de você.</h2>
+        </div>
+        <div class="md:w-1/3 w-full flex justify-center">
+            <button type="button" class="openModal text-white font-montserrat btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram">Fale com um vendedor agora</button>
+        </div>
+    </div>
+</section>
+<section class="w-full bg-black">
+    <?php echo do_shortcode('[swiper_gallery_ram3500]'); ?>
+</section>
+<section class="bg-white pb-11 pt-16 md:px-0 px-5" id="3500">
+    <div class="max-w-6xl mx-auto w-full">
+    <h3 class="uppercase font-medium text-2xl mb-10 font-neue md:text-left text-center">Ficha Técnica <span class="font-bold">3500</span></h3>
+        <div class="w-full flex md:gap-5 md:flex-nowrap flex-wrap">
+            <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
+                <p class="text-base font-bold font-neue md:text-left text-center">Motor</p>
+                <p class="text-sm font-medium font-rubik md:text-left text-center">6.7L Cummins Turbo Diesel, 6 cilindros em linha
+                </p>
+            </div>
+            <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
+                <p class="text-base font-bold font-neue md:text-left text-center">Transmissão</p>
+                <p class="text-sm font-medium font-rubik md:text-left text-center">Automática de 6 marchas</p>
+            </div>
+            <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
+                <p class="text-base font-bold font-neue md:text-left text-center">Cilindradas</p>
+                <p class="text-sm font-medium font-rubik md:text-left text-center">6.690 cm³</p>
+            </div>
+            <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
+                <p class="text-base font-bold font-neue md:text-left text-center">Capacidade caçamba</p>
+                <p class="text-sm font-medium font-rubik md:text-left text-center">até 1.628 litros (varia conforme configuração)</p>
+            </div>
+            <div class="md:w-1/5 w-full mb-5 md:mb-0">
+                <p class="text-base font-bold font-neue md:text-left text-center">Capacidade de passageiros</p>
+                <p class="text-sm font-medium font-rubik md:text-left text-center">5 lugares</p>
+            </div>
+        </div>
+        <div class="w-full flex justify-center mt-5">
+            <button type="button"
+                class="openModal rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-montserrat cursor-pointer">Solicite
+                cotação</button>
         </div>
     </div>
 </section>
@@ -102,42 +136,6 @@
         </div>
     </div>
 </section>
-<section class="bg-white pb-11 pt-16 md:px-0 px-5" id="3500">
-    <div class="max-w-6xl mx-auto w-full">
-        <h3 class="uppercase font-medium text-2xl mb-10 font-montserrat text-center">Ficha Técnica</h3>
-        <div class="w-full flex md:gap-5 md:flex-nowrap flex-wrap">
-            <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
-                <p class="text-base font-bold font-montserrat text-center">Motor</p>
-                <p class="text-sm font-medium font-rubik text-center">6.7L Cummins Turbo Diesel, 6 cilindros em linha
-                </p>
-            </div>
-            <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
-                <p class="text-base font-bold font-montserrat text-center">Transmissão</p>
-                <p class="text-sm font-medium font-rubik text-center">Automática de 6 marchas</p>
-            </div>
-            <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
-                <p class="text-base font-bold font-montserrat text-center">Cilindradas</p>
-                <p class="text-sm font-medium font-rubik text-center">6.690 cm³</p>
-            </div>
-            <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
-                <p class="text-base font-bold font-montserrat text-center">Capacidade caçamba</p>
-                <p class="text-sm font-medium font-rubik text-center">até 1.628 litros (varia conforme configuração)</p>
-            </div>
-            <div class="md:w-1/5 w-full mb-5 md:mb-0">
-                <p class="text-base font-bold font-montserrat text-center">Capacidade de passageiros</p>
-                <p class="text-sm font-medium font-rubik text-center">5 lugares</p>
-            </div>
-        </div>
-        <div class="w-full flex justify-center mt-5">
-            <button type="button"
-                class="openModal rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-montserrat cursor-pointer">Solicite
-                cotação</button>
-        </div>
-    </div>
-</section>
-<section class="w-full bg-black">
-    <?php echo do_shortcode('[swiper_gallery_ram3500]'); ?>
-</section>
 <section class="bg-black pt-24 px-5 md:px-0">
     <div class="max-w-6xl 2xl:max-w-8xl mx-auto md:flex md:justify-between md:gap-8">
         <div class="md:w-1/2 w-full">
@@ -153,7 +151,7 @@
                     <input type="email" name="newsletter_email" placeholder="Inscreva-se com o seu e-mail"
                         class="text-white border border-white rounded-xl px-8 py-2 md:w-xs w-full font-montserrat md:mb-0 mb-5">
                     <button type="button"
-                        class="bg-white newsletter-btn text-black rounded-xl px-4 py-2 cursor-pointer font-montserrat md:m-0 mx-auto">Inscreva-se
+                        class="bg-white newsletter-btn text-black rounded-xl px-4 py-2 cursor-pointer font-montserrat md:m-0 mx-auto duration-500 hover:red-ram hover:text-white">Inscreva-se
                         agora</button>
                 </div>
             </form>

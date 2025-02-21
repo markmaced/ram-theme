@@ -55,10 +55,30 @@
     background: #4D231E;
 }
 
+@utility text-red-ram{
+    color: #4D231E;
+}
+
+@utility border-red-ram{
+    border-color: #4D231E;
+}
+
 @utility text-wave{
     color: #eb0071;
 }
 
 @utility max-w-8xl{
     max-width: 1500px;
+}
+
+@utility font-neue{
+    font-family: 'Neue Plak Sans';
+}
+
+@utility bg-white-50{
+    background: rgba(255,255,255,0.1);
+}
+
+@utility btn-gray{
+    background: #595555;
 }

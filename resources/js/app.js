@@ -74,10 +74,12 @@ jQuery(document).ready(function ($) {
                 }, 100);
 
                 getParameterByName();
-                gradientCard()
 
-                // Fecha o loading
+                // Fecha o loading e rola para o topo
                 Swal.close();
+                setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                }, 300); // Pequeno delay para garantir que o Swal fechou antes da rolagem
             },
             error: function () {
                 Swal.fire({
@@ -243,32 +245,4 @@ jQuery(document).ready(function ($) {
     $toggleButton.on('click', function () {
         $quoteBubble.fadeOut(500);
     });
-
-    function gradientCard() {
-        let $cards = $(document).find(".ram-card");
-        let $defaultActive = $cards.first();
-    
-        // Adiciona a estrutura do degradê a todos os cards, mas deixa invisível
-        $cards.addClass("relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:from-black/50 before:via-black/10 before:to-transparent before:opacity-0");
-    
-        function setActiveCard($card) {
-            $cards.removeClass("before:opacity-100").addClass("before:opacity-0"); // Esconde o degradê dos outros
-            $card.addClass("before:opacity-100"); // Mostra no ativo
-        }
-    
-        // Define o primeiro card como ativo inicialmente
-        setActiveCard($defaultActive);
-    
-        $cards.hover(
-            function () {
-                setActiveCard($(this));
-            },
-            function () {
-                setActiveCard($defaultActive);
-            }
-        );
-    }
-    
-    // Chama a função para ativar o efeito
-    gradientCard();    
 });

@@ -12,8 +12,11 @@
 <section class="w-full bg-black py-20 px-5 md:px-0">
     <div class="max-w-6xl 2xl:max-w-8xl mx-auto flex flex-col md:flex-row md:gap-10 gap-5 items-center">
         <div class="w-full flex items-center justify-center gap-10 md:flex-row flex-col flex-wrap md:flex-nowrap">
-            <h2 class="text-white text-4xl font-neue text-center md:text-left md:w-auto w-full">A força da RAM está a um clique de você.</h2>
-            <button type="button" class="openModal text-white font-neue btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full">Fale com um vendedor agora</button>
+            <h2 class="text-white text-4xl font-neue text-center md:text-left md:w-auto w-full">A força da RAM está a um
+                clique de você.</h2>
+            <button type="button"
+                class="openModal text-white font-neue btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full">Fale
+                com um vendedor agora</button>
         </div>
     </div>
 </section>
@@ -22,7 +25,8 @@
 </section>
 <section class="bg-white pb-11 pt-16 md:px-0 px-5" id="rampage">
     <div class="max-w-6xl mx-auto w-full">
-        <h3 class="uppercase font-medium text-2xl mb-10 font-neue md:text-left text-center">Ficha Técnica <span class="font-bold font-neue">Rampage</span></h3>
+        <h3 class="uppercase font-medium text-2xl mb-10 font-neue md:text-left text-center">Ficha Técnica <span
+                class="font-bold font-neue">Rampage</span></h3>
         <div class="w-full flex md:gap-5 md:flex-nowrap flex-wrap">
             <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
                 <p class="text-base font-bold font-neue md:text-left text-center">Motor</p>
@@ -60,11 +64,12 @@
             <div class="w-full h-full bg-cover bg-center"
                 style="background-image: url(<?php echo get_theme_image('card-rampage.jpg') ?>)">
                 <div class="absolute inset-0 bg-black opacity-0 transition-opacity"></div>
-                <div
-                    class="absolute inset-0 md:px-10 2xl:px-2 px-5 flex flex-col justify-end text-white transition-opacity">
-                    <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAMPAGE</h2>
-                    <p class="text-sm text-center font-neue">Ágil, conectada e pronta para qualquer caminho.</p>
-                    <div class="mt-20 flex justify-end pb-5">
+                <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
+                    <div class="px-5 md:px-10 2xl:px-2 bg-black-40 w-full">
+                        <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAMPAGE</h2>
+                        <p class="text-sm text-center font-neue">Ágil, conectada e pronta para qualquer caminho.</p>
+                    </div>
+                    <div class="mt-20 flex justify-end pb-5 px-5">
                         <button class="rounded-full cursor-pointer">
                             <img src="<?php echo get_theme_image('arrow-right.png') ?>" class="w-10">
                         </button>
@@ -80,11 +85,12 @@
                 style="background-image: url(<?php echo get_theme_image('card-1500.jpg') ?>)">
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                 </div>
-                <div
-                    class="absolute inset-0 md:px-10 2xl:px-2 px-5 flex flex-col justify-end text-white transition-opacity">
-                    <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 1500</h2>
-                    <p class="text-sm text-center font-neue">Potência e sofisticação em um só ícone.</p>
-                    <div class="mt-20 flex justify-end pb-5">
+                <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
+                    <div class="px-5 md:px-10 2xl:px-2 bg-black-40 w-full">
+                        <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 1500</h2>
+                        <p class="text-sm text-center font-neue">Potência e sofisticação em <br>um só ícone.</p>
+                    </div>
+                    <div class="mt-20 flex justify-end pb-5 px-5">
                         <button class="rounded-full cursor-pointer">
                             <img src="<?php echo get_theme_image('arrow-right.png') ?>" class="w-10">
                         </button>
@@ -100,13 +106,16 @@
                 style="background-image: url(<?php echo get_theme_image('card-2500.jpg') ?>)">
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                 </div>
-                <div
-                    class="absolute inset-0 md:px-10 2xl:px-2 px-5 flex flex-col justify-end text-white transition-opacity">
-                    <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 2500</h2>
-                    <p class="text-sm text-center font-neue 2xl:hidden">Força bruta para quem precisa <br>ir além.</p>
-                    <p class="text-sm text-center font-neue hidden 2xl:block md:hidden">Força bruta para quem precisa
-                        ir além.</p>
-                    <div class="mt-20 flex justify-end pb-5">
+                <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
+                    <div class="px-5 md:px-10 2xl:px-2 bg-black-40 w-full">
+                        <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 2500</h2>
+                        <p class="text-sm text-center font-neue 2xl:hidden">Força bruta para quem precisa <br>ir além.
+                        </p>
+                        <p class="text-sm text-center font-neue hidden 2xl:block md:hidden">Força bruta para quem
+                            precisa
+                            ir além.</p>
+                    </div>
+                    <div class="mt-20 flex justify-end pb-5 px-5">
                         <button class="rounded-full cursor-pointer">
                             <img src="<?php echo get_theme_image('arrow-right.png') ?>" class="w-10">
                         </button>
@@ -122,11 +131,12 @@
                 style="background-image: url(<?php echo get_theme_image('card-3500.jpg') ?>)">
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                 </div>
-                <div
-                    class="absolute inset-0 md:px-10 2xl:px-2 px-5 flex flex-col justify-end text-white transition-opacity">
-                    <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 3500</h2>
-                    <p class="text-sm text-center font-neue">Máxima capacidade para os desafios mais exigentes.</p>
-                    <div class="mt-20 flex justify-end pb-5">
+                <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
+                    <div class="px-5 md:px-10 2xl:px-2 bg-black-40 w-full">
+                        <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 3500</h2>
+                        <p class="text-sm text-center font-neue">Máxima capacidade para os desafios mais exigentes.</p>
+                    </div>
+                    <div class="mt-20 flex justify-end pb-5 px-5">
                         <button class="rounded-full cursor-pointer">
                             <img src="<?php echo get_theme_image('arrow-right.png') ?>" class="w-10">
                         </button>

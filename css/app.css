@@ -1089,6 +1089,9 @@
     --tw-duration: 500ms;
     transition-duration: 500ms;
   }
+  .bg-black-40 {
+    background: rgba(0,0,0,0.4);
+  }
   .bg-white-50 {
     background: rgba(255,255,255,0.1);
   }
@@ -1231,12 +1234,6 @@
     &::before {
       content: var(--tw-content);
       opacity: 0%;
-    }
-  }
-  .before\:opacity-100 {
-    &::before {
-      content: var(--tw-content);
-      opacity: 100%;
     }
   }
   .before\:content-\[\'\'\] {

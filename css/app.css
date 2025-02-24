@@ -1379,6 +1379,11 @@
       width: calc(var(--spacing) * 28);
     }
   }
+  .md\:w-auto {
+    @media (width >= 782px) {
+      width: auto;
+    }
+  }
   .md\:w-xs {
     @media (width >= 782px) {
       width: var(--container-xs);

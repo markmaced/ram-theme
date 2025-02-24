@@ -12,12 +12,9 @@
 </section>
 <section class="w-full bg-black py-20 px-5 md:px-0">
     <div class="max-w-6xl 2xl:max-w-8xl mx-auto flex flex-col md:flex-row md:gap-10 gap-5 items-center">
-        <div class="w-full flex items-center justify-center gap-10">
-            <h2 class="text-white text-4xl font-montserrat text-center md:text-left">A força da RAM está a um clique de
-                você.</h2>
-            <button type="button"
-                class="openModal text-white font-montserrat btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram">Fale
-                com um vendedor agora</button>
+        <div class="w-full flex items-center justify-center gap-10 md:flex-row flex-col flex-wrap md:flex-nowrap">
+            <h2 class="text-white text-4xl font-montserrat text-center md:text-left md:w-auto w-full">A força da RAM está a um clique de você.</h2>
+            <button type="button" class="openModal text-white font-montserrat btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full">Fale com um vendedor agora</button>
         </div>
     </div>
 </section>

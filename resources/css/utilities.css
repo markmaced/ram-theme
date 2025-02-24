@@ -82,3 +82,7 @@
 @utility btn-gray{
     background: #595555;
 }
+
+@utility bg-custom-red{
+    background: #93292C;
+}

@@ -635,6 +635,9 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
@@ -799,6 +802,9 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -1205,13 +1211,6 @@
       width: 100%;
     }
   }
-  .before\:bg-gradient-to-b {
-    &::before {
-      content: var(--tw-content);
-      --tw-gradient-position: to bottom in oklab;
-      background-image: linear-gradient(var(--tw-gradient-stops));
-    }
-  }
   .before\:bg-gradient-to-t {
     &::before {
       content: var(--tw-content);
@@ -1219,24 +1218,10 @@
       background-image: linear-gradient(var(--tw-gradient-stops));
     }
   }
-  .before\:from-black\/40 {
-    &::before {
-      content: var(--tw-content);
-      --tw-gradient-from: color-mix(in oklab, var(--color-black) 40%, transparent);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-  }
   .before\:from-black\/50 {
     &::before {
       content: var(--tw-content);
       --tw-gradient-from: color-mix(in oklab, var(--color-black) 50%, transparent);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-  }
-  .before\:from-black\/60 {
-    &::before {
-      content: var(--tw-content);
-      --tw-gradient-from: color-mix(in oklab, var(--color-black) 60%, transparent);
       --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
     }
   }

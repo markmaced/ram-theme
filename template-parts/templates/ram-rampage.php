@@ -11,10 +11,8 @@
 </section>
 <section class="w-full bg-black py-20 px-5 md:px-0">
     <div class="max-w-6xl 2xl:max-w-8xl mx-auto flex flex-col md:flex-row md:gap-10 gap-5 items-center">
-        <div class="md:w-2/3 w-full">
-            <h2 class="text-white text-3xl font-montserrat text-center md:text-left">A força da RAM está a um clique de você.</h2>
-        </div>
-        <div class="md:w-1/3 w-full flex justify-center">
+        <div class="w-full flex items-center justify-center gap-10">
+            <h2 class="text-white text-4xl font-montserrat text-center md:text-left">A força da RAM está a um clique de você.</h2>
             <button type="button" class="openModal text-white font-montserrat btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram">Fale com um vendedor agora</button>
         </div>
     </div>
@@ -47,7 +45,7 @@
                 <p class="text-sm font-medium font-rubik md:text-left text-center">5 lugares</p>
             </div>
         </div>
-        <div class="w-full flex justify-center mt-5">
+        <div class="w-full flex justify-center mt-10">
             <button type="button"
                 class="openModal rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-montserrat cursor-pointer">Solicite
                 cotação</button>
@@ -57,7 +55,7 @@
 <section class="w-full">
     <div class="flex w-full md:flex-nowrap flex-wrap">
         <!-- Card 1 -->
-        <div class="ram-card md:w-1/4 w-1/2 md:h-[520px] h-[360px] cursor-pointer relative group overflow-hidden"
+        <div class="ram-card md:w-1/4 w-1/2 md:h-[520px] h-[360px] cursor-pointer relative group overflow-hidden relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:from-black/50 before:via-black/10 before:to-transparent before:opacity-0"
             data-model="rampage">
             <div class="w-full h-full bg-cover bg-center"
                 style="background-image: url(<?php echo get_theme_image('card-rampage.jpg') ?>)">

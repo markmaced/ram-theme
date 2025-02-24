@@ -74,6 +74,7 @@ jQuery(document).ready(function ($) {
                 }, 100);
 
                 getParameterByName();
+                gradientCard()
 
                 // Fecha o loading
                 Swal.close();
@@ -243,27 +244,31 @@ jQuery(document).ready(function ($) {
         $quoteBubble.fadeOut(500);
     });
 
-    let $cards = $(".ram-card");
-let $defaultActive = $cards.first(); // Define o primeiro card como ativo por padrão
-
-// Adiciona a estrutura do degradê a todos os cards, mas deixa invisível
-$cards.addClass("relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:from-black/50 before:via-black/10 before:to-transparent before:opacity-0");
-
-function setActiveCard($card) {
-    $cards.removeClass("before:opacity-100").addClass("before:opacity-0"); // Esconde o degradê dos outros
-    $card.addClass("before:opacity-100"); // Mostra no ativo
-}
-
-// Define o primeiro card como ativo inicialmente
-setActiveCard($defaultActive);
-
-$cards.hover(
-    function () {
-        setActiveCard($(this));
-    },
-    function () {
+    function gradientCard() {
+        let $cards = $(document).find(".ram-card");
+        let $defaultActive = $cards.first();
+    
+        // Adiciona a estrutura do degradê a todos os cards, mas deixa invisível
+        $cards.addClass("relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:from-black/50 before:via-black/10 before:to-transparent before:opacity-0");
+    
+        function setActiveCard($card) {
+            $cards.removeClass("before:opacity-100").addClass("before:opacity-0"); // Esconde o degradê dos outros
+            $card.addClass("before:opacity-100"); // Mostra no ativo
+        }
+    
+        // Define o primeiro card como ativo inicialmente
         setActiveCard($defaultActive);
+    
+        $cards.hover(
+            function () {
+                setActiveCard($(this));
+            },
+            function () {
+                setActiveCard($defaultActive);
+            }
+        );
     }
-);
-
+    
+    // Chama a função para ativar o efeito
+    gradientCard();    
 });

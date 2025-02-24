@@ -2,17 +2,17 @@
     class="w-full md:min-h-screen custom-min-h bg-cover relative bg-bottom md:bg-center before:w-full before:h-full before:content-[''] before:absolute before:black-opacity-0.5 top-0 flex items-center"
     style="background-image: url(<?php echo get_theme_image('bg-ram2500.jpg') ?>);">
     <div class="md:max-w-6xl 2xl:max-w-8xl w-full mx-auto flex flex-col items-start max-w-full px-5 md:px-0">
-        <h1 class="text-white md:text-5xl text-4xl text-left mb-5 font-semibold font-montserrat z-50">RAM 2500: Poder
+        <h1 class="text-white md:text-5xl text-4xl text-left mb-5 font-semibold font-neue z-50">RAM 2500: Poder
             Inigualável <br>para qualquer desafio.
         </h1>
-        <h2 class="text-sm text-white font-extralight font-rubik z-50">A picape feita para quem precisa de força sem limites.<br> Capacidade, resistência e tecnologia para encarar<br> qualquer terreno com confiança.</h2>
+        <h2 class="text-sm text-white font-extralight font-neue z-50">A picape feita para quem precisa de força sem limites.<br> Capacidade, resistência e tecnologia para encarar<br> qualquer terreno com confiança.</h2>
     </div>
 </section>
 <section class="w-full bg-black py-20 px-5 md:px-0">
     <div class="max-w-6xl 2xl:max-w-8xl mx-auto flex flex-col md:flex-row md:gap-10 gap-5 items-center">
         <div class="w-full flex items-center justify-center gap-10 md:flex-row flex-col flex-wrap md:flex-nowrap">
-            <h2 class="text-white text-4xl font-montserrat text-center md:text-left md:w-auto w-full">A força da RAM está a um clique de você.</h2>
-            <button type="button" class="openModal text-white font-montserrat btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full">Fale com um vendedor agora</button>
+            <h2 class="text-white text-4xl font-neue text-center md:text-left md:w-auto w-full">A força da RAM está a um clique de você.</h2>
+            <button type="button" class="openModal text-white font-neue btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full">Fale com um vendedor agora</button>
         </div>
     </div>
 </section>
@@ -25,29 +25,29 @@
         <div class="w-full flex md:gap-5 md:flex-nowrap flex-wrap">
             <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
                 <p class="text-base font-bold font-neue md:text-left text-center">Motor</p>
-                <p class="text-sm font-medium font-rubik md:text-left text-center">6.7L Cummins Turbo Diesel, 6 cilindros em linha
+                <p class="text-sm font-medium font-neue md:text-left text-center">6.7L Cummins Turbo Diesel, 6 cilindros em linha
                 </p>
             </div>
             <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
                 <p class="text-base font-bold font-neue md:text-left text-center">Transmissão</p>
-                <p class="text-sm font-medium font-rubik md:text-left text-center">Automática de 6 marchas</p>
+                <p class="text-sm font-medium font-neue md:text-left text-center">Automática de 6 marchas</p>
             </div>
             <div class="md:w-1/5 w-1/2 mb-5 md:mb-0 pl-10">
                 <p class="text-base font-bold font-neue md:text-left text-center">Cilindradas</p>
-                <p class="text-sm font-medium font-rubik md:text-left text-center">6.690 cm³</p>
+                <p class="text-sm font-medium font-neue md:text-left text-center">6.690 cm³</p>
             </div>
             <div class="md:w-1/5 w-1/2 mb-5 md:mb-0">
                 <p class="text-base font-bold font-neue md:text-left text-center">Capacidade caçamba</p>
-                <p class="text-sm font-medium font-rubik md:text-left text-center">1.628 litros</p>
+                <p class="text-sm font-medium font-neue md:text-left text-center">1.628 litros</p>
             </div>
             <div class="md:w-1/5 w-full mb-5 md:mb-0">
                 <p class="text-base font-bold font-neue md:text-left text-center">Capacidade de passageiros</p>
-                <p class="text-sm font-medium font-rubik md:text-left text-center">5 lugares</p>
+                <p class="text-sm font-medium font-neue md:text-left text-center">5 lugares</p>
             </div>
         </div>
         <div class="w-full flex justify-center mt-5">
             <button type="button"
-                class="openModal rounded-3xl text-white w-auto text-center customgradient no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-montserrat cursor-pointer">Solicite
+                class="openModal rounded-3xl text-white w-auto text-center red-ram no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-neue cursor-pointer">Solicite
                 cotação</button>
         </div>
     </div>
@@ -61,8 +61,8 @@
                 style="background-image: url(<?php echo get_theme_image('card-rampage.jpg') ?>)">
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity"></div>
                 <div class="absolute inset-0 md:px-10 px-5 flex flex-col justify-end text-white transition-opacity">
-                    <h2 class="md:text-4xl text-2xl font-medium mb-8 text-center font-montserrat">RAMPAGE</h2>
-                    <p class="text-sm text-center font-rubik">Ágil, conectada e pronta para qualquer caminho.</p>
+                    <h2 class="md:text-4xl text-2xl font-medium mb-8 text-center font-neue">RAMPAGE</h2>
+                    <p class="text-sm text-center font-neue">Ágil, conectada e pronta para qualquer caminho.</p>
                     <div class="mt-20 flex justify-end pb-5">
                         <button class="rounded-full cursor-pointer">
                             <img src="<?php echo get_theme_image('arrow-right.png') ?>" class="w-10">
@@ -80,8 +80,8 @@
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                 </div>
                 <div class="absolute inset-0 md:px-10 px-5 flex flex-col justify-end text-white transition-opacity">
-                    <h2 class="md:text-4xl text-2xl font-medium mb-8 text-center font-montserrat">RAM 1500</h2>
-                    <p class="text-sm text-center font-rubik">Potência e sofisticação em um só ícone.</p>
+                    <h2 class="md:text-4xl text-2xl font-medium mb-8 text-center font-neue">RAM 1500</h2>
+                    <p class="text-sm text-center font-neue">Potência e sofisticação em um só ícone.</p>
                     <div class="mt-20 flex justify-end pb-5">
                         <button class="rounded-full cursor-pointer">
                             <img src="<?php echo get_theme_image('arrow-right.png') ?>" class="w-10">
@@ -99,9 +99,9 @@
                 <div class="absolute inset-0 bg-black opacity-0 transition-opacity duration-500">
                 </div>
                 <div class="absolute inset-0 md:px-10 px-5 flex flex-col justify-end text-white transition-opacity">
-                    <h2 class="md:text-4xl text-2xl font-medium mb-8 text-center font-montserrat">RAM 2500</h2>
-                    <p class="text-sm text-center font-rubik 2xl:hidden">Força bruta para quem precisa <br>ir além.</p>
-                    <p class="text-sm text-center font-rubik hidden 2xl:block md:hidden">Força bruta para quem precisa
+                    <h2 class="md:text-4xl text-2xl font-medium mb-8 text-center font-neue">RAM 2500</h2>
+                    <p class="text-sm text-center font-neue 2xl:hidden">Força bruta para quem precisa <br>ir além.</p>
+                    <p class="text-sm text-center font-neue hidden 2xl:block md:hidden">Força bruta para quem precisa
                         ir além.</p>
                     <div class="mt-20 flex justify-end pb-5">
                         <button class="rounded-full cursor-pointer">
@@ -120,8 +120,8 @@
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                 </div>
                 <div class="absolute inset-0 md:px-10 px-5 flex flex-col justify-end text-white transition-opacity">
-                    <h2 class="md:text-4xl text-2xl font-medium mb-8 text-center font-montserrat">RAM 3500</h2>
-                    <p class="text-sm text-center font-rubik">Máxima capacidade para os desafios mais exigentes.</p>
+                    <h2 class="md:text-4xl text-2xl font-medium mb-8 text-center font-neue">RAM 3500</h2>
+                    <p class="text-sm text-center font-neue">Máxima capacidade para os desafios mais exigentes.</p>
                     <div class="mt-20 flex justify-end pb-5">
                         <button class="rounded-full cursor-pointer">
                             <img src="<?php echo get_theme_image('arrow-right.png') ?>" class="w-10">
@@ -136,18 +136,18 @@
 <section class="bg-black pt-24 px-5 md:px-0">
     <div class="max-w-6xl 2xl:max-w-8xl mx-auto md:flex md:justify-between md:gap-8">
         <div class="md:w-1/2 w-full">
-            <h2 class="uppercase text-white md:text-2xl text-xl font-bold font-montserrat md:mb-0 mb-1.5">Poder
+            <h2 class="uppercase text-white md:text-2xl text-xl font-bold font-neue md:mb-0 mb-1.5">Poder
                 Inigualável também é estar sempre à frente.</h2>
-            <p class="text-sm font-normal text-white font-rubik md:mb-0 mb-5">Quer ficar por dentro de lançamentos,
+            <p class="text-sm font-normal text-white font-neue md:mb-0 mb-5">Quer ficar por dentro de lançamentos,
                 novidades e condições especiais da RAM 2500? Cadastre-se e receba tudo em primeira mão.</p>
         </div>
         <div class="md:w-1/2 w-full flex items-center">
             <form method="post" class="w-full">
                 <div class="flex md:gap-5 items-center w-full md:flex-row flex-col justify-end">
                     <input type="email" name="newsletter_email" placeholder="Inscreva-se com o seu e-mail"
-                        class="text-white border border-white rounded-xl px-8 py-2 md:w-xs w-full font-montserrat md:mb-0 mb-5">
+                        class="text-white border border-white rounded-xl px-8 py-2 md:w-xs w-full font-neue md:mb-0 mb-5">
                     <button type="button"
-                        class="bg-white newsletter-btn text-black rounded-xl px-4 py-2 cursor-pointer font-montserrat md:m-0 mx-auto duration-500 hover:red-ram hover:text-white">Inscreva-se
+                        class="bg-white newsletter-btn text-black rounded-xl px-4 py-2 cursor-pointer font-neue md:m-0 mx-auto duration-500 hover:red-ram hover:text-white">Inscreva-se
                         agora</button>
                 </div>
             </form>

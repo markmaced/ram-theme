@@ -967,14 +967,8 @@
   .text-left {
     text-align: left;
   }
-  .font-montserrat {
-    font-family: 'Montserrat', sans-serif;
-  }
   .font-neue {
     font-family: 'Neue Plak Sans';
-  }
-  .font-rubik {
-    font-family: 'Rubik', sans-serif;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -1104,11 +1098,8 @@
   .btn-gray {
     background: #595555;
   }
-  .customgradient {
-    background: linear-gradient(92.11deg, #8D3B3E -8.47%, #49211C 98.22%);
-  }
   .red-ram {
-    background: #4D231E;
+    background: #93292c;
   }
   .group-hover\:opacity-0 {
     &:is(:where(.group):hover *) {
@@ -1168,7 +1159,7 @@
   }
   .peer-focus\:text-red-ram {
     &:is(:where(.peer):focus ~ *) {
-      color: #4D231E;
+      color: #93292c;
     }
   }
   .before\:absolute {
@@ -1278,13 +1269,13 @@
   .hover\:red-ram {
     &:hover {
       @media (hover: hover) {
-        background: #4D231E;
+        background: #93292c;
       }
     }
   }
   .focus\:border-red-ram {
     &:focus {
-      border-color: #4D231E;
+      border-color: #93292c;
     }
   }
   .focus\:ring-0 {
@@ -1525,15 +1516,10 @@
       color: var(--color-white);
     }
   }
-  .dark\:red-ram {
-    @media (prefers-color-scheme: dark) {
-      background: #4D231E;
-    }
-  }
   .peer-focus\:dark\:text-red-ram {
     &:is(:where(.peer):focus ~ *) {
       @media (prefers-color-scheme: dark) {
-        color: #4D231E;
+        color: #93292c;
       }
     }
   }
@@ -1549,7 +1535,7 @@
   .dark\:focus\:border-red-ram {
     @media (prefers-color-scheme: dark) {
       &:focus {
-        border-color: #4D231E;
+        border-color: #93292c;
       }
     }
   }

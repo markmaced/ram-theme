@@ -31,14 +31,6 @@
 @utility customgradient{
     background: linear-gradient(92.11deg, #8D3B3E -8.47%, #49211C 98.22%);
 }
-@utility font-montserrat {
-    font-family: 'Montserrat', sans-serif;
-}
-
-@utility font-rubik {
-    font-family: 'Rubik', sans-serif;
-}
-
 @utility custom-gray{
     color: #BCBCBC;
 }
@@ -52,15 +44,15 @@
 }
 
 @utility red-ram{
-    background: #4D231E;
+    background: #93292c;
 }
 
 @utility text-red-ram{
-    color: #4D231E;
+    color: #93292c;
 }
 
 @utility border-red-ram{
-    border-color: #4D231E;
+    border-color: #93292c;
 }
 
 @utility text-wave{
@@ -81,8 +73,4 @@
 
 @utility btn-gray{
     background: #595555;
-}
-
-@utility bg-custom-red{
-    background: #93292C;
 }

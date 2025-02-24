@@ -10,7 +10,7 @@
     <div class="max-w-6xl 2xl:max-w-8xl mx-auto md:flex justify-between border-b border-b-gray-400 pb-10">
         <div class="md:w-1/2 w-full flex items-start flex-col md:mb-0 mb-10">
             <img src="<?php echo get_theme_image('florenca-logo.png') ?>" class="mb-3">
-            <p class="font-rubik font-normal text-sm custom-gray">CNPJ: 77.968.980/0016-21<br>Endereço Matriz: Av. Mal.
+            <p class="font-neue font-normal text-sm custom-gray">CNPJ: 77.968.980/0016-21<br>Endereço Matriz: Av. Mal.
                 Floriano Peixoto, 3501<br>Parolin, Curitiba - PR</p>
         </div>
         <div class="md:w-1/2 w-full md:flex md:justify-end">
@@ -18,10 +18,10 @@
         </div>
     </div>
     <div class="w-full flex justify-between max-w-6xl 2xl:max-w-8xl mx-auto items-center pt-8 md:flex-row flex-col">
-        <p class="font-rubik text-white font-normal text-base md:text-left text-center md:mb-0 mb-5">© Copyright 2025
+        <p class="font-neue text-white font-normal text-base md:text-left text-center md:mb-0 mb-5">© Copyright 2025
             Grupo Florença - Todos os direitos
             reservados</p>
-        <p class="text-white text-sm font-normal font-montserrat">Criado por <a href="https://www.wave.pro.br"
+        <p class="text-white text-sm font-normal font-neue">Criado por <a href="https://www.wave.pro.br"
                 class="hover:text-wave transition-all duration-300" target="_blank">wave</a></p>
     </div>
     <div class="fixed bottom-5 right-5 z-50">
@@ -30,7 +30,7 @@
             <img src="<?php echo get_theme_image('etc.png') ?>" class="w-10">
         </button>
         <div id="quoteBubble"
-            class="-right-60 opacity-0 top-1 w-36 text-center absolute p-2 red-ram text-white rounded-full shadow-lg text-xs font-montserrat px-5 transition-all duration-500">
+            class="-right-60 opacity-0 top-1 w-36 text-center absolute p-2 red-ram text-white rounded-full shadow-lg text-xs font-neue px-5 transition-all duration-500">
             Solicite cotação
         </div>
 
@@ -52,8 +52,8 @@
         <!-- <div class="bg-gradient-to-r from-black to-gray-800 p-6 rounded-lg shadow-lg w-lg relative"> -->
         <div class="bg-black p-6 shadow-lg w-lg relative">
             <button id="closeModal" class="absolute top-2 right-2 text-white hover:text-white cursor-pointer">&times;</button>
-            <h2 class="text-2xl font-semibold font-montserrat text-white mb-5">Eu quero ser exclusivo.</h2>
-            <p class="text-sm font-rubik text-white"></p>
+            <h2 class="text-2xl font-semibold font-neue text-white mb-5">Eu quero ser exclusivo.</h2>
+            <p class="text-sm font-neue text-white"></p>
             <form class="max-w-md mx-auto">
                 <div class="bg-white-50 pt-5">
                     <div class="relative z-0 w-full mb-5 group">

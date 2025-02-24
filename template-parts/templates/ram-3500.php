@@ -92,7 +92,10 @@
                 <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
                     <div class="px-5 md:px-10 2xl:px-2 bg-black-40 w-full">
                         <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 1500</h2>
-                        <p class="text-sm text-center font-neue">Potência e sofisticação em <br>um só ícone.</p>
+                        <p class="text-sm text-center font-neue hidden md:block 2xl:hidden">Potência e sofisticação em
+                            <br>um só ícone.</p>
+                        <p class="text-sm text-center font-neue block md:hidden 2xl:block">Potência e sofisticação em um
+                            só ícone.</p>
                     </div>
                     <div class="mt-20 flex justify-end pb-5 px-5">
                         <button class="rounded-full cursor-pointer">

@@ -52,7 +52,7 @@
         </div>
         <div class="w-full flex justify-center mt-10">
             <button type="button"
-                class="openModal rounded-3xl text-white w-auto text-center red-ram no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-neue cursor-pointer">Fale com vendedor agora</button>
+                class="openModal rounded-3xl text-white w-auto text-center red-ram no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-neue cursor-pointer">Fale com um vendedor agora</button>
         </div>
     </div>
 </section>

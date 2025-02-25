@@ -4,12 +4,13 @@
         style="background-image: url(<?php echo get_theme_image('bg-ram1500.jpg') ?>);">
         <div
             class="max-w-6xl xl:max-w-6xl lg:max-w-6xl md:max-w-6xl 3xl:max-w-8xl w-full mx-auto flex flex-col items-start px-5 md:px-0">
+            <?php $row = wp_is_mobile() ? '' : '<br>' ?>
             <h1 class="text-white md:text-5xl text-4xl text-left mb-5 font-semibold font-neue z-50">RAM 1500: Poder
                 Inigualável <br>com sofisticação e performance.
             </h1>
             <h2 class="text-base text-white font-normal font-neue z-50">A potência que desafia os limites. O conforto
-                <br>
-                transforma cada trajeto. Tudo o que você espera de uma<br> RAM, elevado a um novo patamar.</h2>
+                <?php echo $row ?> transforma cada trajeto. Tudo o que você espera de uma <?php echo $row ?> RAM, elevado
+                a um novo patamar.</h2>
         </div>
     </section>
     <section class="w-full bg-black py-20 px-5 md:px-0">
@@ -19,8 +20,8 @@
                     a um
                     clique de você.</h2>
                 <button type="button"
-                    class="openModal text-white font-neue btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full">Fale
-                    com um vendedor agora</button>
+                    class="openModal text-white font-neue btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full md:text-lg">Fale
+                    com um vendedor agora!</button>
             </div>
         </div>
     </section>
@@ -40,7 +41,7 @@
                     <p class="text-base font-bold font-neue md:text-left text-center">Transmissão</p>
                     <p class="text-sm md:text-left text-center font-medium font-neue">Automática de 8 marchas</p>
                 </div>
-                <div class="md:w-1/5 w-1/2 mb-5 md:mb-0 pl-10">
+                <div class="md:w-1/5 w-1/2 mb-5 md:mb-0 md:pl-10">
                     <p class="text-base font-bold font-neue md:text-left text-center">Cilindradas</p>
                     <p class="text-sm md:text-left text-center font-medium font-neue">2.998 cm³</p>
                 </div>
@@ -55,13 +56,14 @@
             </div>
             <div class="w-full flex justify-center mt-10">
                 <button type="button"
-                    class="openModal rounded-3xl text-white w-auto text-center red-ram no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-neue cursor-pointer">Fale
+                    class="openModal text-white font-neue btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full">Fale
                     com um vendedor agora</button>
             </div>
         </div>
     </section>
     <section class="w-full">
         <div class="flex w-full md:flex-nowrap flex-wrap">
+            <?php $row = wp_is_mobile() ? '<br>' : '' ?>
             <!-- Card 1 -->
             <div class="ram-card md:w-1/4 w-1/2 md:h-[520px] h-[360px] cursor-pointer relative group overflow-hidden"
                 data-model="rampage">
@@ -119,12 +121,13 @@
                     <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
                         <div class="px-5 md:px-10 2xl:px-2 bg-black-60 w-full">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 2500</h2>
-                            <p class="text-sm text-center font-neue 2xl:hidden">Força bruta para quem precisa <br>ir
+                            <p class="text-sm text-center font-neue 2xl:hidden md:block hidden">Força bruta para quem
+                                precisa <br>ir
                                 além.
                             </p>
-                            <p class="text-sm text-center font-neue hidden 2xl:block md:hidden">Força bruta para quem
-                                precisa
-                                ir além.</p>
+                            <p class="text-sm text-center font-neue block 2xl:block md:hidden">Força bruta
+                                <?php echo $row ?> para quem <?php echo $row ?>
+                                precisa ir além.</p>
                         </div>
                         <div class="mt-20 flex justify-end pb-5 px-5">
                             <button class="rounded-full cursor-pointer">
@@ -146,7 +149,8 @@
                     <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
                         <div class="px-5 md:px-10 2xl:px-2 bg-black-60 w-full">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 3500</h2>
-                            <p class="text-sm text-center font-neue">Máxima capacidade para os desafios mais exigentes.
+                            <p class="text-sm text-center font-neue">Máxima capacidade <?php echo $row ?> para os
+                                desafios mais <?php echo $row ?> exigentes.
                             </p>
                         </div>
                         <div class="mt-20 flex justify-end pb-5 px-5">
@@ -160,7 +164,7 @@
         </div>
 
     </section>
-    <section class="bg-black pt-24 px-5 md:px-0">
+    <section class="bg-black md:pt-24 pt-16 px-5 md:px-0">
         <div
             class="max-w-6xl xl:max-w-6xl lg:max-w-6xl md:max-w-6xl 3xl:max-w-8xl mx-auto md:flex md:justify-between md:gap-8">
             <div class="md:w-1/2 w-full">

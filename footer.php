@@ -6,7 +6,7 @@
 
 <?php do_action('tailpress_content_after'); ?>
 
-<footer class="bg-black md:pt-40 pt-10 pb-10 md:px-0 px-5">
+<footer class="bg-black md:pt-40 pt-16 pb-10 md:px-0 px-5">
     <div class="max-w-6xl xl:max-w-6xl lg:max-w-6xl md:max-w-6xl 3xl:max-w-8xl mx-auto md:flex justify-between border-b border-b-gray-400 pb-10">
         <div class="md:w-1/2 w-full flex items-start flex-col md:mb-0 mb-10">
             <img src="<?php echo get_theme_image('florenca-logo.png') ?>" class="mb-3">

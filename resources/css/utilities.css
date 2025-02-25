@@ -71,8 +71,8 @@
     background: rgba(255,255,255,0.1);
 }
 
-@utility bg-black-40{
-    background: rgba(0,0,0,0.4);
+@utility bg-black-60{
+    background: rgba(0,0,0,0.6);
 }
 
 @utility btn-gray{

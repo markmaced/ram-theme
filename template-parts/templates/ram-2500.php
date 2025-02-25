@@ -1,7 +1,8 @@
 <section
     class="w-full md:min-h-screen custom-min-h bg-cover relative bg-bottom md:bg-center before:w-full before:h-full before:content-[''] before:absolute before:black-opacity-0.5 top-0 flex items-center"
     style="background-image: url(<?php echo get_theme_image('bg-ram2500.jpg') ?>);">
-    <div class="max-w-6xl 2xl:max-w-8xl w-full mx-auto flex flex-col items-start max-w-full px-5 md:px-0">
+    <div
+        class="max-w-6xl xl:max-w-6xl lg:max-w-6xl md:max-w-6xl 3xl:max-w-8xl w-full mx-auto flex flex-col items-start px-5 md:px-0">
         <h1 class="text-white md:text-5xl text-4xl text-left mb-5 font-semibold font-neue z-50">RAM 2500: Poder
             Inigualável <br>para qualquer desafio.
         </h1>
@@ -53,8 +54,7 @@
         </div>
         <div class="w-full flex justify-center mt-5">
             <button type="button"
-                class="openModal rounded-3xl text-white w-auto text-center red-ram no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-neue cursor-pointer">Solicite
-                cotação</button>
+                class="openModal rounded-3xl text-white w-auto text-center red-ram no-underline px-8 py-2.5 flex gap-2.5 items-center mb-5 font-neue cursor-pointer">Fale com vendedor agora</button>
         </div>
     </div>
 </section>
@@ -67,7 +67,7 @@
                 style="background-image: url(<?php echo get_theme_image('card-rampage.jpg') ?>)">
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity"></div>
                 <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
-                    <div class="px-5 md:px-10 2xl:px-2 bg-black-40 w-full">
+                    <div class="px-5 md:px-10 2xl:px-2 bg-black-60 w-full">
                         <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAMPAGE</h2>
                         <p class="text-sm text-center font-neue">Ágil, conectada e pronta para qualquer caminho.</p>
                     </div>
@@ -88,10 +88,11 @@
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                 </div>
                 <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
-                    <div class="px-5 md:px-10 2xl:px-2 bg-black-40 w-full">
+                    <div class="px-5 md:px-10 2xl:px-2 bg-black-60 w-full">
                         <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 1500</h2>
                         <p class="text-sm text-center font-neue hidden md:block 2xl:hidden">Potência e sofisticação em
-                            <br>um só ícone.</p>
+                            <br>um só ícone.
+                        </p>
                         <p class="text-sm text-center font-neue block md:hidden 2xl:block">Potência e sofisticação em um
                             só ícone.</p>
                     </div>
@@ -112,7 +113,7 @@
                 <div class="absolute inset-0 bg-black opacity-0 active-ram transition-opacity duration-500">
                 </div>
                 <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
-                    <div class="px-5 md:px-10 2xl:px-2 bg-black-40 w-full">
+                    <div class="px-5 md:px-10 2xl:px-2 bg-black-60 w-full">
                         <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 2500</h2>
                         <p class="text-sm text-center font-neue 2xl:hidden">Força bruta para quem precisa <br>ir além.
                         </p>
@@ -137,7 +138,7 @@
                 <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                 </div>
                 <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
-                    <div class="px-5 md:px-10 2xl:px-2 bg-black-40 w-full">
+                    <div class="px-5 md:px-10 2xl:px-2 bg-black-60 w-full">
                         <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 3500</h2>
                         <p class="text-sm text-center font-neue">Máxima capacidade para os desafios mais exigentes.</p>
                     </div>
@@ -153,7 +154,8 @@
 
 </section>
 <section class="bg-black pt-24 px-5 md:px-0">
-    <div class="max-w-6xl 2xl:max-w-8xl mx-auto md:flex md:justify-between md:gap-8">
+    <div
+        class="max-w-6xl xl:max-w-6xl lg:max-w-6xl md:max-w-6xl 3xl:max-w-8xl mx-auto md:flex md:justify-between md:gap-8">
         <div class="md:w-1/2 w-full">
             <h2 class="uppercase text-white md:text-2xl text-xl font-bold font-neue md:mb-0 mb-1.5">Poder
                 Inigualável também é estar sempre à frente.</h2>

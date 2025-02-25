@@ -7,7 +7,7 @@
 <?php do_action('tailpress_content_after'); ?>
 
 <footer class="bg-black md:pt-40 pt-10 pb-10 md:px-0 px-5">
-    <div class="max-w-6xl 2xl:max-w-8xl mx-auto md:flex justify-between border-b border-b-gray-400 pb-10">
+    <div class="max-w-6xl xl:max-w-6xl lg:max-w-6xl md:max-w-6xl 3xl:max-w-8xl mx-auto md:flex justify-between border-b border-b-gray-400 pb-10">
         <div class="md:w-1/2 w-full flex items-start flex-col md:mb-0 mb-10">
             <img src="<?php echo get_theme_image('florenca-logo.png') ?>" class="mb-3">
             <p class="font-neue font-normal text-sm custom-gray">CNPJ: 77.968.980/0016-21<br>Endereço Matriz: Av. Mal.
@@ -17,7 +17,7 @@
             <img src="<?php echo get_theme_image('ram-footer.png') ?>" class="md:w-3xs w-48 object-contain">
         </div>
     </div>
-    <div class="w-full flex justify-between max-w-6xl 2xl:max-w-8xl mx-auto items-center pt-8 md:flex-row flex-col">
+    <div class="w-full flex justify-between max-w-6xl xl:max-w-6xl lg:max-w-6xl md:max-w-6xl 3xl:max-w-8xl mx-auto items-center pt-8 md:flex-row flex-col">
         <p class="font-neue text-white font-normal text-base md:text-left text-center md:mb-0 mb-5">© Copyright 2025
             Grupo Florença - Todos os direitos
             reservados</p>
@@ -31,7 +31,7 @@
         </button>
         <div id="quoteBubble"
             class="-right-60 opacity-0 top-1 w-36 text-center absolute p-2 red-ram text-white rounded-full shadow-lg text-xs font-neue px-5 transition-all duration-500">
-            Solicite cotação
+            Fale com vendedor agora
         </div>
 
         <!-- Botões secundários -->
@@ -50,11 +50,11 @@
     <div id="customModal"
         class="fixed inset-0 flex items-center justify-center h-screen w-full z-50 black-opacity-0.5 hidden md:px-0 px-5">
         <!-- <div class="bg-gradient-to-r from-black to-gray-800 p-6 rounded-lg shadow-lg w-lg relative"> -->
-        <div class="bg-black p-6 shadow-lg w-lg relative">
+        <div class="bg-black py-6 px-8 shadow-lg w-lg relative">
             <button id="closeModal" class="absolute top-2 right-2 text-white hover:text-white cursor-pointer">&times;</button>
             <h2 class="text-2xl font-semibold font-neue text-white mb-5">Eu quero ser exclusivo.</h2>
             <p class="text-sm font-neue text-white"></p>
-            <form class="max-w-md mx-auto">
+            <form class="max-w-full mx-auto">
                 <div class="bg-white-50 pt-5">
                     <div class="relative z-0 w-full mb-5 group">
                         <input type="text" name="floating_name" id="floating_name"

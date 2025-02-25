@@ -58,7 +58,7 @@
             <div class="w-full flex justify-center mt-5">
                 <button type="button"
                     class="openModal text-white font-neue btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full">Fale
-                    com um vendedor agora</button>
+                    com um vendedor agora!</button>
             </div>
         </div>
     </section>
@@ -74,7 +74,7 @@
                     <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
                         <div class="px-5 md:px-10 2xl:px-2 bg-black-60 w-full">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAMPAGE</h2>
-                            <p class="text-sm text-center font-neue">Ágil, conectada e pronta para qualquer caminho.</p>
+                            <p class="text-sm text-center font-neue">Ágil, conectada e <?php echo $row ?> pronta para qualquer caminho.</p>
                         </div>
                         <div class="mt-20 flex justify-end pb-5 px-5">
                             <button class="rounded-full cursor-pointer">
@@ -100,9 +100,8 @@
                                 em
                                 <br>um só ícone.
                             </p>
-                            <p class="text-sm text-center font-neue block md:hidden 2xl:block">Potência e sofisticação
-                                em um
-                                só ícone.</p>
+                            <p class="text-sm text-center font-neue block md:hidden 2xl:block">Potência e <?php echo $row ?>sofisticação
+                                em <?php echo $row ?> um só ícone.</p>
                         </div>
                         <div class="mt-20 flex justify-end pb-5 px-5">
                             <button class="rounded-full cursor-pointer">

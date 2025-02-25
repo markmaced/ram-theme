@@ -1,7 +1,7 @@
 <section
     class="w-full md:min-h-screen custom-min-h bg-cover relative bg-bottom md:bg-center before:w-full before:h-full before:content-[''] before:absolute before:black-opacity-0.5 top-0 before:z-0 items-center flex"
     style="background-image: url(<?php echo get_theme_image('bg-ram1500.jpg') ?>);">
-    <div class="md:max-w-6xl 2xl:max-w-8xl w-full mx-auto flex flex-col items-start max-w-full px-5 md:px-0">
+    <div class="max-w-6xl 2xl:max-w-8xl w-full mx-auto flex flex-col items-start max-w-full px-5 md:px-0">
         <h1 class="text-white md:text-5xl text-4xl text-left mb-5 font-semibold font-neue z-50">RAM 1500: Poder
             Inigualável <br>com sofisticação e performance.
         </h1>

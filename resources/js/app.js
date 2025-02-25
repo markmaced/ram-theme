@@ -245,4 +245,26 @@ jQuery(document).ready(function ($) {
     $toggleButton.on('click', function () {
         $quoteBubble.fadeOut(500);
     });
+
+    function gradientCard() {
+        var $cards = $(document).find(".ram-card");
+        var $defaultActive = $cards.first();
+    
+        // Adiciona a estrutura do degradê a todos os cards, mas deixa invisível
+        function setActiveCard($card) {
+          $cards.removeClass("before:opacity-100").addClass("before:opacity-0"); // Esconde o degradê dos outros
+          $card.addClass("before:opacity-100"); // Mostra no ativo
+        }
+    
+        // Define o primeiro card como ativo inicialmente
+        setActiveCard($defaultActive);
+        $cards.hover(function () {
+          setActiveCard($(this));
+        }, function () {
+          setActiveCard($defaultActive);
+        });
+      }
+    
+      // Chama a função para ativar o efeito
+      gradientCard();
 });

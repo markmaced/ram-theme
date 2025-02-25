@@ -74,6 +74,9 @@ jQuery(document).ready(function ($) {
                 }, 100);
 
                 getParameterByName();
+                setTimeout(() => {
+                    activeCard();
+                }, 100);
 
                 // Fecha o loading e rola para o topo
                 Swal.close();
@@ -246,25 +249,39 @@ jQuery(document).ready(function ($) {
         $quoteBubble.fadeOut(500);
     });
 
-    function gradientCard() {
-        var $cards = $(document).find(".ram-card");
-        var $defaultActive = $cards.first();
+    var $cards = $(".ram-card");
+
+    function activeCard() {
+        var $cards = $(".ram-card"); // Atualiza os cards
+        var $defaultActive = null;
     
-        // Adiciona a estrutura do degradê a todos os cards, mas deixa invisível
-        function setActiveCard($card) {
-          $cards.removeClass("before:opacity-100").addClass("before:opacity-0"); // Esconde o degradê dos outros
-          $card.addClass("before:opacity-100"); // Mostra no ativo
-        }
-    
-        // Define o primeiro card como ativo inicialmente
-        setActiveCard($defaultActive);
-        $cards.hover(function () {
-          setActiveCard($(this));
-        }, function () {
-          setActiveCard($defaultActive);
+        // Percorre os cards para encontrar aquele que contém um filho com .active-ram
+        $cards.each(function () {
+            if ($(this).find(".active-ram").length) {
+                $defaultActive = $(this);
+                return false;
+            }
         });
-      }
     
-      // Chama a função para ativar o efeito
-      gradientCard();
+        setActiveCard($defaultActive);
+    
+        $cards.hover(
+            function () {
+                setActiveCard($(this));
+            },
+            function () {
+                setActiveCard($defaultActive);
+            }
+        );
+    }
+
+    function setActiveCard($card) {
+        $(".ram-card .bg-black").css("opacity", "0.6"); // Escurece todos
+        if ($card) {
+            $card.find(".bg-black").css("opacity", "0"); // Destaca o ativo
+        }
+    }
+
+    activeCard()
+
 });

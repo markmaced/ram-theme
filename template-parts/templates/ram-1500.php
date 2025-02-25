@@ -82,7 +82,7 @@
             data-model="1500">
             <div class="w-full h-full bg-cover bg-center"
                 style="background-image: url(<?php echo get_theme_image('card-1500.jpg') ?>)">
-                <div class="absolute inset-0 bg-black opacity-0 transition-opacity duration-500">
+                <div class="absolute inset-0 bg-black opacity-0 active-ram transition-opacity duration-500">
                 </div>
                 <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
                     <div class="px-5 md:px-10 2xl:px-2 bg-black-40 w-full">

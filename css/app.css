@@ -717,15 +717,6 @@
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
-  .w-36 {
-    width: calc(var(--spacing) * 36);
-  }
-  .w-40 {
-    width: calc(var(--spacing) * 40);
-  }
-  .w-44 {
-    width: calc(var(--spacing) * 44);
-  }
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
@@ -1644,6 +1635,10 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
+  #ram3500 {
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
   .swiper {
     width: 100%;
     height: 300px;
@@ -1695,7 +1690,7 @@
   }
   @media screen and (min-width:1600px) {
     .swiper-slide img {
-      height: 750px !important;
+      height: 850px !important;
     }
   }
 }

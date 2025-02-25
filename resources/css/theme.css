@@ -5,6 +5,7 @@
     --breakpoint-lg: var(--wp--style--global--content-size);
     --breakpoint-xl: var(--wp--style--global--wide-size);
     --breakpoint-2xl: 1440px;
+    --breakpoint-3xl: 1600px;
 
     --color-primary: var(--wp--preset--color--primary);
     --color-secondary: var(--wp--preset--color--secondary);

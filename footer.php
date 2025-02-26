@@ -31,7 +31,7 @@
         </button>
         <div id="quoteBubble"
             class="-right-60 opacity-0 top-1 w-48 text-center absolute p-2 red-ram text-white rounded-full shadow-lg text-xs font-neue px-5 transition-all duration-500">
-            Fale com um vendedor agora
+            Fale com um vendedor agora!
         </div>
 
         <!-- Botões secundários -->

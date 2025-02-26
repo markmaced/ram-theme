@@ -72,8 +72,8 @@
                 <div class="w-full h-full bg-cover bg-center"
                     style="background-image: url(<?php echo get_theme_image('card-rampage.jpg') ?>)">
                     <div class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity"></div>
-                    <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
-                        <div class="px-5 md:px-10 2xl:px-2 bg-black-60 w-full">
+                    <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity infos-content">
+                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos w-full py-3">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAMPAGE</h2>
                             <p class="text-sm text-center font-neue">Ágil, conectada e <?php echo $row ?> pronta para qualquer caminho.</p>
                         </div>
@@ -94,8 +94,8 @@
                     <div
                         class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                     </div>
-                    <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
-                        <div class="px-5 md:px-10 2xl:px-2 bg-black-60 w-full">
+                    <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity infos-content">
+                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos w-full py-3">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 1500</h2>
                             <p class="text-sm text-center font-neue hidden md:block 2xl:hidden">Potência e sofisticação
                                 em
@@ -121,8 +121,8 @@
                     <div
                         class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                     </div>
-                    <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
-                        <div class="px-5 md:px-10 2xl:px-2 bg-black-60 w-full">
+                    <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity infos-content">
+                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos w-full py-3">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 2500</h2>
                             <p class="text-sm text-center font-neue 2xl:hidden md:block hidden">Força bruta para quem precisa <br>ir
                                 além.
@@ -146,8 +146,8 @@
                     style="background-image: url(<?php echo get_theme_image('card-3500.jpg') ?>)">
                     <div class="absolute inset-0 bg-black opacity-0 active-ram transition-opacity duration-500">
                     </div>
-                    <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity">
-                        <div class="px-5 md:px-10 2xl:px-2 bg-black-60 w-full">
+                    <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity infos-content">
+                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos bg-black-70 w-full py-3">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 3500</h2>
                             <p class="text-sm text-center font-neue">Máxima capacidade <?php echo $row?> para os desafios mais <?php echo $row?> exigentes.
                             </p>

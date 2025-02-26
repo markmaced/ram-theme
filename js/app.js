@@ -310,6 +310,7 @@ jQuery(document).ready(function ($) {
         return false;
       }
     });
+    console.log($defaultActive);
     setActiveCard($defaultActive);
     $cards.hover(function () {
       setActiveCard($(this));
@@ -319,8 +320,10 @@ jQuery(document).ready(function ($) {
   }
   function setActiveCard($card) {
     $(".ram-card .bg-black").css("opacity", "0.6"); // Escurece todos
+    $(".overlay-infos").removeClass('bg-black-70');
     if ($card) {
-      $card.find(".bg-black").css("opacity", "0"); // Destaca o ativo
+      $card.find(".bg-black").css("opacity", "0");
+      $card.find(".infos-content .overlay-infos").addClass("bg-black-70");
     }
   }
   activeCard();

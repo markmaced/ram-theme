@@ -29,7 +29,7 @@
 }
 
 @utility customgradient{
-    background: linear-gradient(92.11deg, #8D3B3E -8.47%, #49211C 98.22%);
+    background-color: linear-gradient(92.11deg, #8D3B3E -8.47%, #49211C 98.22%);
 }
 @utility custom-gray{
     color: #BCBCBC;
@@ -40,11 +40,11 @@
 }
 
 @utility black-opacity-0.5{
-    background: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
 }
 
 @utility red-ram{
-    background: #93292c;
+    background-color: #93292c;
 }
 
 @utility text-red-ram{
@@ -68,13 +68,17 @@
 }
 
 @utility bg-white-50{
-    background: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.1);
 }
 
 @utility bg-black-70{
-    background: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.7);
 }
 
 @utility btn-gray{
-    background: #595555;
+    background-color: #595555;
+}
+
+@utility green-wpp{
+    background-color: #25D366;
 }

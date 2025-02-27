@@ -96,6 +96,16 @@ jQuery(document).ready(function ($) {
 
     $(document).on('click', '.openModal', function () {
         $("#customModal").fadeIn(300).css("display", "flex");
+        $('#wppLead').css('display' , 'none')
+        $("#lpRam").css("display", "block");
+        $('#formName').val('LP Ofertas Ram');
+    });
+
+    $(document).on('click', '.openWpp', function () {
+        $("#customModal").fadeIn(300).css("display", "flex");
+        $('#lpRam').css('display' , 'none')
+        $("#wppLead").css("display", "block");
+        $('#formName').val('Whatsapp Lead');
     });
 
     $("#closeModal, #customModal").click(function (e) {
@@ -121,6 +131,7 @@ jQuery(document).ready(function ($) {
 
     $("#floating_cpf").mask("000.000.000-00");
     $("#floating_telefone").mask("(00) 00000-0000");
+    $("#wpp").mask("(00) 00000-0000");
 
     $(document).on("click", "#registerLead", function (event) {
         event.preventDefault(); // Evita comportamento padrão do botão
@@ -131,7 +142,47 @@ jQuery(document).ready(function ($) {
             { id: "floating_cpf", name: "cpf", mensagem: "O campo CPF é obrigatório." },
             { id: "floating_email", name: "email", mensagem: "O campo Email é obrigatório." },
             { id: "floating_telefone", name: "telefone", mensagem: "O campo Telefone é obrigatório." },
-            { id: "floating_model", name: "modelo", mensagem: "O campo Modelo é obrigatório." }
+            { id: "floating_model", name: "modelo", mensagem: "O campo Modelo é obrigatório." },
+            { id: "formName", name: "form_name", mensagem: "O campo Hidden é obrigatório." }
+        ];
+
+        // Verifica se algum campo está vazio
+        for (let campo of campos) {
+            if (!$(`#${campo.id}`).val().trim()) {
+                return Swal.fire("Erro!", campo.mensagem, "error");
+            }
+        }
+
+        // Monta os dados do formulário com os names corretos para o backend
+        let formData = campos.reduce((dados, campo) => {
+            dados[campo.name] = $(`#${campo.id}`).val().trim();
+            return dados;
+        }, {});
+
+        // Envia os dados via AJAX
+        $.ajax({
+            url: "https://crm.wave.pro.br/wp-json/crm-wave/v1/create-lead/lp-ram",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(formData),
+            success: function (response) {
+                Swal.fire("Sucesso!", response.message || "Cadastro realizado com sucesso!", "success");
+                campos.forEach(campo => $(`#${campo.id}`).val(""));
+            },
+            error: function () {
+                Swal.fire("Erro!", "Ocorreu um erro ao enviar os dados. Tente novamente.", "error");
+            }
+        });
+    });
+    $(document).on("click", "#registerLeadWpp", function (event) {
+        event.preventDefault(); // Evita comportamento padrão do botão
+
+        // Lista de campos obrigatórios e seus nomes corretos para o backend
+        let campos = [
+            { id: "wpp_name", name: "nome", mensagem: "O campo Nome é obrigatório." },
+            { id: "wpp_email", name: "email", mensagem: "O campo Email é obrigatório." },
+            { id: "wpp_telefone", name: "telefone", mensagem: "O campo Telefone é obrigatório." },
+            { id: "formName", name: "form_name", mensagem: "O campo Hidden é obrigatório." }
         ];
 
         // Verifica se algum campo está vazio

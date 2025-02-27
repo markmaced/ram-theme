@@ -8,21 +8,17 @@
             <h1 class="text-white md:text-5xl text-4xl text-left mb-5 font-semibold font-neue z-50">Poder
                 Inigualável<br>em cada quilômetro.
             </h1>
-            <h2 class="text-base text-white font-normal font-neue z-50">A força e a tecnologia da RAM agora no tamanho
-                certo
-                para <?php echo $row ?> o seu dia a dia. Performance, conectividade e robustez sem <?php echo $row ?>
-                concessões.</h2>
+            <h2 class="text-base text-white font-normal font-neue z-50">A Força e a tecnologia RAM agora no tamanho certo para o seu dia a dia.<?php echo $row ?> Performance, conectividade e robustez sem concessões.</h2>
         </div>
     </section>
     <section class="w-full bg-black py-20 px-5 md:px-0">
         <div class="max-w-6xl 2xl:max-w-8xl mx-auto flex flex-col md:flex-row md:gap-10 gap-5 items-center">
             <div class="w-full flex items-center justify-center gap-10 md:flex-row flex-col flex-wrap md:flex-nowrap">
-                <h2 class="text-white text-4xl font-neue text-center md:text-left md:w-auto w-full">A força da RAM está
+                                <h2 class="text-white text-4xl font-neue text-center md:text-left md:w-auto w-full">A força RAM está
                     a um
                     clique de você.</h2>
                 <button type="button"
-                    class="openModal text-white font-neue btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full md:text-lg">Fale
-                    com um vendedor agora!</button>
+                    class="openModal text-white font-neue btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full md:text-lg">Fale com um consultor agora!</button>
             </div>
         </div>
     </section>
@@ -57,8 +53,7 @@
             </div>
             <div class="w-full flex justify-center mt-10">
                 <button type="button"
-                    class="openModal text-white font-neue btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full">Fale
-                    com um vendedor agora!</button>
+                    class="openModal text-white font-neue btn-gray rounded-md py-2.5 px-5 cursor-pointer transition-all duration-500 hover:red-ram md:w-auto w-full">Fale com um consultor agora!</button>
             </div>
         </div>
     </section>
@@ -72,9 +67,9 @@
                     style="background-image: url(<?php echo get_theme_image('card-rampage.jpg') ?>)">
                     <div class="absolute inset-0 bg-black opacity-0 transition-opacity active-ram"></div>
                     <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity infos-content">
-                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos bg-black-70 w-full py-3">
+                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos bg-black-70 w-full py-3 md:min-h-28 3xl:min-h-auto min-h-32">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAMPAGE</h2>
-                            <p class="text-sm text-center font-neue">Ágil, conectada e <?php echo $row ?> pronta para qualquer caminho.</p>
+                            <p class="text-sm text-center font-neue">Descubra o poder que só uma ram tem</p>
                         </div>
                         <div class="mt-20 flex justify-end pb-5 px-5">
                             <button class="rounded-full cursor-pointer">
@@ -94,12 +89,10 @@
                         class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                     </div>
                     <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity infos-content">
-                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos w-full py-3">
+                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos w-full py-3 md:min-h-28 3xl:min-h-auto min-h-32">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 1500</h2>
-                            <p class="text-sm text-center font-neue hidden md:block 2xl:hidden">Potência e sofisticação
-                                em <br>um só ícone.</p>
-                            <p class="text-sm text-center font-neue block md:hidden 2xl:block">Potência e <?php echo $row ?>sofisticação
-                                em <?php echo $row ?> um só ícone.</p>
+                            <p class="text-sm text-center font-neue hidden md:block 2xl:hidden">A picape que está redefinindo o poder</p>
+                            <p class="text-sm text-center font-neue block md:hidden 2xl:block">A picape que está redefinindo o poder</p>
                         </div>
                         <div class="mt-20 flex justify-end pb-5 px-5">
                             <button class="rounded-full cursor-pointer">
@@ -119,13 +112,11 @@
                         class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                     </div>
                     <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity infos-content">
-                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos w-full py-3">
+                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos w-full py-3 md:min-h-28 3xl:min-h-auto min-h-32">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 2500</h2>
-                            <p class="text-sm text-center font-neue 2xl:hidden md:block hidden">Força bruta para quem precisa <br>ir
-                                além.
+                            <p class="text-sm text-center font-neue 2xl:hidden md:block hidden">A potência da única marca premium de picapes do brasil
                             </p>
-                            <p class="text-sm text-center font-neue block 2xl:block md:hidden">Força bruta <?php echo $row?> para quem <?php echo $row?>
-                                precisa ir além.</p>
+                            <p class="text-sm text-center font-neue block 2xl:block md:hidden">A potência da única marca premium de picapes do brasil</p>
                         </div>
                         <div class="mt-20 flex justify-end pb-5 px-5">
                             <button class="rounded-full cursor-pointer">
@@ -145,9 +136,9 @@
                         class="absolute inset-0 bg-black group-hover:opacity-0 opacity-60 transition-opacity duration-500">
                     </div>
                     <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity infos-content">
-                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos w-full py-3">
+                        <div class="px-5 md:px-10 2xl:px-2 overlay-infos w-full py-3 md:min-h-28 3xl:min-h-auto min-h-32">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 3500</h2>
-                            <p class="text-sm text-center font-neue">Máxima capacidade <?php echo $row?> para os desafios mais <?php echo $row?> exigentes.
+                            <p class="text-sm text-center font-neue">Todas as conquistas em uma só.
                             </p>
                         </div>
                         <div class="mt-20 flex justify-end pb-5 px-5">

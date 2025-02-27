@@ -120,9 +120,9 @@
                     <div class="absolute inset-0 flex flex-col justify-end text-white transition-opacity infos-content">
                         <div class="px-5 md:px-10 2xl:px-2 overlay-infos w-full py-3 md:min-h-28 3xl:min-h-auto min-h-32">
                             <h2 class="md:text-4xl text-2xl font-medium mb-2 text-center font-neue">RAM 2500</h2>
-                            <p class="text-sm text-center font-neue 2xl:hidden md:block hidden">A potência da única marca premium de picapes do brasil.
+                            <p class="text-sm text-center font-neue 2xl:hidden md:block hidden">A potência da única marca premium de picapes do Brasil.
                             </p>
-                            <p class="text-sm text-center font-neue block 2xl:block md:hidden">A potência da única marca premium de picapes do brasil.</p>
+                            <p class="text-sm text-center font-neue block 2xl:block md:hidden">A potência da única marca premium de picapes do Brasil.</p>
                         </div>
                         <div class="mt-20 flex justify-end pb-5 px-5">
                             <button class="rounded-full cursor-pointer">

@@ -163,7 +163,7 @@ jQuery(document).ready(function ($) {
   getParameterByName();
   $("#floating_cpf").mask("000.000.000-00");
   $("#floating_telefone").mask("(00) 00000-0000");
-  $("#wpp").mask("(00) 00000-0000");
+  $("#wpp_telefone").mask("(00) 00000-0000");
   $(document).on("click", "#registerLead", function (event) {
     event.preventDefault(); // Evita comportamento padrão do botão
 
@@ -198,9 +198,18 @@ jQuery(document).ready(function ($) {
     for (var _i = 0, _campos = campos; _i < _campos.length; _i++) {
       var campo = _campos[_i];
       if (!$("#".concat(campo.id)).val().trim()) {
+        Swal.close();
         return Swal.fire("Erro!", campo.mensagem, "error");
       }
     }
+    Swal.fire({
+      title: "Aguarde...",
+      text: "Estamos processando seu cadastro.",
+      allowOutsideClick: false,
+      didOpen: function didOpen() {
+        Swal.showLoading();
+      }
+    });
 
     // Monta os dados do formulário com os names corretos para o backend
     var formData = campos.reduce(function (dados, campo) {
@@ -215,6 +224,7 @@ jQuery(document).ready(function ($) {
       contentType: "application/json",
       data: JSON.stringify(formData),
       success: function success(response) {
+        Swal.close();
         Swal.fire("Sucesso!", response.message || "Cadastro realizado com sucesso!", "success");
         campos.forEach(function (campo) {
           return $("#".concat(campo.id)).val("");
@@ -261,6 +271,16 @@ jQuery(document).ready(function ($) {
       return dados;
     }, {});
 
+    // Exibe o loading antes da requisição
+    Swal.fire({
+      title: "Aguarde...",
+      text: "Estamos processando seu cadastro.",
+      allowOutsideClick: false,
+      didOpen: function didOpen() {
+        Swal.showLoading();
+      }
+    });
+
     // Envia os dados via AJAX
     $.ajax({
       url: "https://crm.wave.pro.br/wp-json/crm-wave/v1/create-lead/lp-ram",
@@ -268,9 +288,19 @@ jQuery(document).ready(function ($) {
       contentType: "application/json",
       data: JSON.stringify(formData),
       success: function success(response) {
-        Swal.fire("Sucesso!", response.message || "Cadastro realizado com sucesso!", "success");
-        campos.forEach(function (campo) {
-          return $("#".concat(campo.id)).val("");
+        Swal.fire({
+          title: "Sucesso!",
+          text: response.message || "Cadastro realizado com sucesso!",
+          icon: "success",
+          confirmButtonText: "OK"
+        }).then(function (result) {
+          if (result.isConfirmed) {
+            campos.forEach(function (campo) {
+              return $("#".concat(campo.id)).val("");
+            });
+            var linkWpp = "https://wa.me/5541992580720";
+            window.location.href = linkWpp;
+          }
         });
       },
       error: function error() {
@@ -295,6 +325,14 @@ jQuery(document).ready(function ($) {
         return Swal.fire("Erro!", campo.mensagem, "error");
       }
     }
+    Swal.fire({
+      title: "Aguarde...",
+      text: "Estamos processando seu cadastro.",
+      allowOutsideClick: false,
+      didOpen: function didOpen() {
+        Swal.showLoading();
+      }
+    });
 
     // Monta os dados do formulário com os names corretos para o backend
     var formData = campos.reduce(function (dados, campo) {
@@ -309,6 +347,7 @@ jQuery(document).ready(function ($) {
       contentType: "application/json",
       data: JSON.stringify(formData),
       success: function success(response) {
+        Swal.close();
         Swal.fire("Sucesso!", response.message || "Cadastro realizado com sucesso!", "success");
         campos.forEach(function (campo) {
           return $("input[name=\"".concat(campo.id, "\"]")).val("");
